@@ -1,0 +1,48 @@
+{
+    "title": "Matkanaattori Addon",
+    "name": "matkanaattori-extension",
+    "version": "0.0.1",
+    "description": "An add-on for Matkanaattori",
+    "main": "index.js",
+    "author": "javaninjat",
+    "engines": {
+        "firefox": ">=38.0a1",
+        "fennec": ">=38.0a1"
+    },
+    "license": "GPL",
+    "preferences": [{
+        "name": "timeZone",
+        "title": "Local time zone",
+        "description": "Select your time zone",
+        "type": "string",
+        "value": "this is the default string value"
+    }, {
+        "name": "travelSpeed",
+        "title": "Walking/cyckling speed",
+        "description": "Select your walking or cyckling speed",
+        "type": "menulist",
+        "value": "70",
+        "options": [{
+            "value": "30",
+            "label": "slow (30m/min)"
+        }, {
+            "value": "70",
+            "label": "normal (70m/min)"
+        }, {
+            "value": "100",
+            "label": "fast (100m/min)"
+        }, {
+            "value": "200",
+            "label": "running (200m/min)"
+        }, {
+            "value": "300",
+            "label": "cycling (300m/min)"
+        }]
+    }, {
+        "name": "iCalUrls",
+        "title": "Calendar URLs",
+        "description": "Add your iCal calendar addresses",
+        "type": "string",
+        "value": ""
+    }]
+}
