@@ -31,4 +31,19 @@ if ("geolocation" in navigator) {
 
 function do_something(x, y) {
     console.log(x, y);
+    $.ajax({
+        url: "http://localhost:8080/locate",
+        type: "GET",
+        data: {"start": x + "," + y, "destination":"3433184,6905220" },
+        contentType: "text/xml; charset=utf-8",
+        success: function (data) {
+            //called when successful
+            console.log(data);
+            alert("ok");
+        },
+        error: function (e) {
+            //called when there is an error
+            console.log(e.message);
+        }
+    });
 }
