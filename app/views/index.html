@@ -8,7 +8,11 @@
     </head>
     <body>
         <h1>Matkanaattori</h1>
-        <p>Welcome using matkanaattori!</p>
-        <p>You need to <a href="/login">login</a> to use matkanaattori:</p>
+        % if user:
+            <p>Welcome using matkanaattori ${user}!</p>
+            <a href="/logout">Logout</a>
+        % else:
+            <p>You need to <a href="/login">login</a> to use matkanaattori!</p>
+        % endif
     </body>
 </html>
