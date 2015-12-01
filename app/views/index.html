@@ -2,17 +2,17 @@
 <html>
     <head>
         <title>Matkanaattori</title>
-        <link href="/static/css/style.css" rel="stylesheet">
+        <link href="resources/css/style.css" rel="stylesheet">
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-        <script src="resources/geolocation.js"></script>
+        <script src="resources/js/geolocation.js"></script>
     </head>
     <body>
         <h1>Matkanaattori</h1>
-        <p>Welcome using matkanaattori!</p>
-        <form action="/login" method="post">
-            <div><label> User Name: <input type="text" name="username"/> </label></div>
-            <div><label> Password: <input type="password" name="password"/> </label></div>
-            <div><input type="submit" value="Login"/></div>
-        </form>
+        % if user:
+            <p>Welcome using matkanaattori ${user}!</p>
+            <a href="/logout">Logout</a>
+        % else:
+            <p>You need to <a href="/login">login</a> to use matkanaattori!</p>
+        % endif
     </body>
 </html>
