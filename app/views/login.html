@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matkanaattori - Login</title>
+        <link href="resources/css/style.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    </head>
+    <body>
+        <h1>Matkanaattori</h1>
+        <p>${msg}</p>
+        <form action="/auth/login" method="post">
+            <div><label> User Name: <input type="text" name="username"/> </label></div>
+            <div><label> Password: <input type="password" name="password"/> </label></div>
+            <div><input type="submit" value="Login"/></div>
+        </form>
+    </body>
+</html>
