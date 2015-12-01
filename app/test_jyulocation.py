@@ -1,18 +1,26 @@
 import snappy
+import cgi
 import location_pb2
 from location_pb2 import Response
-
-URL = "http://jyulocation.appspot.com/locate/Ag%20Alfa"
-
 from requests import get
 
-message = Response()
-r = get(URL, stream=True)
-uncomp = snappy.uncompress(r.content)
-message.ParseFromString(uncomp)
+URL = "http://jyulocation.appspot.com/locate/"
 
-print (message.status) # found: 0, not found: 1, error: 2
+def getJyuLocation(classroom):
+    message = Response()
+    r = get(URL + cgi.escape(classroom), stream=True)
+    uncomp = snappy.uncompress(r.content)
+    message.ParseFromString(uncomp)
 
-for l in message.location:
-    print (l.lat)
-    print (l.lng)
+    #print (message.status) # found: 0, not found: 1, error: 2
+
+    if message.status is 0:
+        return message.location[0]
+    return None
+
+if __name__ == '__main__':
+    location = getJyuLocation("Ag Alfa")
+    print ("Location of Ag Alfa:")
+    print (location.lat)
+    print (location.lng)
+
