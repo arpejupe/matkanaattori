@@ -5,7 +5,7 @@ import pytz
 
 class UCalendar(Calendar):
     def __init__(self, icalurl):
-        r = get(icalurl, stream=True)
+        r = get(icalurl, stream=True) ## this should get the calendar from the calendars cache service
         self.cal = Calendar.from_ical(r.content)
 
     def getNextEvent(self):
