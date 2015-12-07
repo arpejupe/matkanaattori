@@ -1,21 +1,24 @@
+DB_STRING = "matkanaattori.db"
+SESSION_KEY = '_cp_username'
+
 import cherrypy
 import requests
 import os
 import template
 import auth
+import registration
+
+import sqlite3
 
 from cgi import escape
 
 #for debugging
 from pprint import pprint
 
-DB_STRING = "matkanaattori.db"
-SESSION_KEY = '_cp_username'
-
 class MatkaClient(object):
     
-    main = template.MakoLoader()
-    cherrypy.tools.mako = cherrypy.Tool('on_start_resource', main)
+    template = template.MakoLoader()
+    cherrypy.tools.mako = cherrypy.Tool('on_start_resource', template)
 
     @cherrypy.tools.mako(filename="index.html")
     @cherrypy.expose
@@ -27,9 +30,14 @@ class MatkaClient(object):
     def login(self, username=None, password=None):
         #username = escape(username) does not work, need proper validation
         #password = escape(password)
+        with sqlite3.connect(DB_STRING) as con:
+            cur = con.cursor()
+            cur.execute("SELECT * FROM user")
+            list = cur.fetchall();
         if username is None or password is None:
             return {'username': username,
-                    'msg': 'Please login by giving username and password:'}
+                    'msg': 'Please login by giving username and password:',
+                    'list': list}
         
         error_msg = auth.check_credentials(username, password)
         if error_msg:
@@ -48,6 +56,26 @@ class MatkaClient(object):
         if username:
             cherrypy.request.login = None
         raise cherrypy.HTTPRedirect("/")
+    
+    @cherrypy.tools.mako(filename="register.html")
+    @cherrypy.expose
+    def register(self, username=None, password=None, timezone=None, calendar_url=None):
+        if username is None or password is None or timezone is None or calendar_url is None:
+            return {'register': False,
+                    'username': username,
+                    'msg': 'Please register by providing username, password, timezone and calendar url'}
+                    
+        register = registration.submit(username, password, timezone, calendar_url)
+        if register is False:
+            return {'register': register,
+                    'msg': 'Registeration failed, please try again',
+                    'username': username,
+                    'password': password,
+                    'timezone': timezone,
+                    'calendar_url': calendar_url}     
+        else:
+            return {'register': register,
+                    'msg': 'Regisration successful!'}  
         
     @cherrypy.expose
     @auth.require()
@@ -74,6 +102,12 @@ if __name__ == '__main__':
             'tools.auth.on': True,
             'tools.staticdir.root': os.path.abspath(os.getcwd())
         },
+        '/register': {
+            'tools.mako.collection_size': 500,
+            'tools.mako.directories': 'views/',
+            'tools.sessions.on': True,
+            'tools.staticdir.root': os.path.abspath(os.getcwd())
+        },
         '/locate': {
             'tools.response_headers.on': True,
             'tools.response_headers.headers': [('Content-Type', 'text/xml')],
@@ -83,16 +117,12 @@ if __name__ == '__main__':
             'tools.response_headers.on': True,
             'tools.response_headers.headers': [('Content-Type', 'text/plain')],
         },
-        '/register': {
-            'request.dispatch': cherrypy.dispatch.MethodDispatcher(),
-            'tools.response_headers.on': True,
-            'tools.response_headers.headers': [('Content-Type', 'text/plain')],
-        },
         '/resources': {
             'tools.staticdir.on': True,
             'tools.staticdir.dir': './resources'
         }
     }
+    
     webapp = MatkaClient()
     cherrypy.quickstart(webapp, '/', conf)
 

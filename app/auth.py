@@ -4,25 +4,23 @@
 # Session tool to be loaded.
 #
 
-import cherrypy
+DB_STRING = "matkanaattori.db"
 
-SESSION_KEY = '_cp_username'
+import cherrypy
+import sqlite3
 
 def check_credentials(username, password):
-    """Verifies credentials for username and password.
-    Returns None on success or a string describing the error on failure"""
-    # Adapt to your needs
-    if username in ('joe', 'steve') and password == 'secret':
-        return None
-    else:
-        return u"Incorrect username or password."
     
-    # An example implementation which uses an ORM could be:
-    # u = User.get(username)
-    # if u is None:
-    #     return u"Username %s is unknown to me." % username
-    # if u.password != md5.new(password).hexdigest():
-    #     return u"Incorrect password"
+    with sqlite3.connect(DB_STRING) as con:
+        cur = con.cursor()
+        cur.execute("SELECT * FROM user WHERE username=:username AND password=:password", 
+                    {'username': username, 'password': password})
+        result = cur.fetchone()
+        if result is None: 
+            return u"Incorrect username or password." 
+        else:
+            return None
+        
 
 def check_auth(*args, **kwargs):
     """A tool that looks in config for 'auth.require'. If found and it

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matkanaattori - Register</title>
+        <link href="resources/css/style.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    </head>
+    <body>
+        <h1>Matkanaattori Registration</h1>
+        % if register is False:
+            <p>${msg}</p>
+            <form action="register" method="post">
+                <div><label> User Name: <input type="text" name="username"/> </label></div>
+                <div><label> Password: <input type="password" name="password"/> </label></div>
+                <div><label> Timezone: <input type="text" name="timezone"/> </label></div>
+                <div><label> Calendar URL: <input type="text" name="calendar_url"/> </label></div>
+                <div><input type="submit" value="Register"/></div>
+            </form>
+        % else :
+            <p>${msg}</p>
+        % endif
+    </body>
+</html>
