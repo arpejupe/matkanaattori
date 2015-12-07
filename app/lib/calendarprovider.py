@@ -14,9 +14,9 @@ class Events(object):
         self.events.append(event)
 
     def getNextEvent(self):
-        now = datetime.now(pytz.utc)
         iterEvents = iter(self.events)
         nextEvent = next(iterEvents)
+        now = datetime.now(nextEvent["start"].tzinfo)
         for event in iterEvents:
             start = event["start"]
             if start > now and start < nextEvent["start"]:
