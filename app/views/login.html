@@ -8,9 +8,8 @@
     <body>
         <h1>Matkanaattori</h1>
         <p>${msg}</p>
-        <p>${list}</p>
         <form action="login" method="post">
-            <div><label> User Name: <input type="text" name="username"/> </label></div>
+            <div><label> User Name: <input type="text" name="username" value="${username}"/> </label></div>
             <div><label> Password: <input type="password" name="password"/> </label></div>
             <div><input type="submit" value="Login"/></div>
         </form>

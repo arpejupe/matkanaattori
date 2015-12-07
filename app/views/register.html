@@ -10,10 +10,10 @@
         % if register is False:
             <p>${msg}</p>
             <form action="register" method="post">
-                <div><label> User Name: <input type="text" name="username"/> </label></div>
-                <div><label> Password: <input type="password" name="password"/> </label></div>
-                <div><label> Timezone: <input type="text" name="timezone"/> </label></div>
-                <div><label> Calendar URL: <input type="text" name="calendar_url"/> </label></div>
+                <div><label> User Name: <input type="text" name="username" value="${username}"/> </label></div>
+                <div><label> Password: <input type="password" name="password" value="${password}"/> </label></div>
+                <div><label> Timezone: <input type="text" name="timezone" value="${timezone}"/> </label></div>
+                <div><label> Calendar URL: <input type="text" name="calendar_url" value="${calendar_url}"/> </label></div>
                 <div><input type="submit" value="Register"/></div>
             </form>
         % else :

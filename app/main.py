@@ -8,12 +8,13 @@ import template
 import auth
 import registration
 
-import sqlite3
-
-from cgi import escape
+from registration import SubmitException
 
 #for debugging
 from pprint import pprint
+
+def xstr(s):
+    return '' if s is None else str(s)
 
 class MatkaClient(object):
     
@@ -28,16 +29,9 @@ class MatkaClient(object):
     @cherrypy.tools.mako(filename="login.html")
     @cherrypy.expose
     def login(self, username=None, password=None):
-        #username = escape(username) does not work, need proper validation
-        #password = escape(password)
-        with sqlite3.connect(DB_STRING) as con:
-            cur = con.cursor()
-            cur.execute("SELECT * FROM user")
-            list = cur.fetchall();
         if username is None or password is None:
-            return {'username': username,
-                    'msg': 'Please login by giving username and password:',
-                    'list': list}
+            return {'msg': 'Please login by giving username and password:',
+                    'username': xstr(username)}
         
         error_msg = auth.check_credentials(username, password)
         if error_msg:
@@ -62,20 +56,22 @@ class MatkaClient(object):
     def register(self, username=None, password=None, timezone=None, calendar_url=None):
         if username is None or password is None or timezone is None or calendar_url is None:
             return {'register': False,
-                    'username': username,
-                    'msg': 'Please register by providing username, password, timezone and calendar url'}
-                    
-        register = registration.submit(username, password, timezone, calendar_url)
-        if register is False:
-            return {'register': register,
-                    'msg': 'Registeration failed, please try again',
+                    'msg': 'Please register by providing username, password, timezone and calendar url',
+                    'username': xstr(username),
+                    'password': xstr(password),
+                    'timezone': xstr(timezone),
+                    'calendar_url': xstr(calendar_url)}
+        try:
+            registration.submit(username, password, timezone, calendar_url)
+            return {'register': True,
+                    'msg': 'Regisration successful!'} 
+        except SubmitException as ex:
+            return {'register': False,
+                    'msg': ex.message,
                     'username': username,
                     'password': password,
                     'timezone': timezone,
-                    'calendar_url': calendar_url}     
-        else:
-            return {'register': register,
-                    'msg': 'Regisration successful!'}  
+                    'calendar_url': calendar_url}  
         
     @cherrypy.expose
     @auth.require()

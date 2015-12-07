@@ -1,16 +1,13 @@
-# -*- encoding: UTF-8 -*-
-#
-# Form based authentication for CherryPy. Requires the
-# Session tool to be loaded.
-#
-
 DB_STRING = "matkanaattori.db"
 
 import cherrypy
 import sqlite3
 
+from cgi import escape
+
 def check_credentials(username, password):
-    
+    username = escape(username)
+    password = escape(password)
     with sqlite3.connect(DB_STRING) as con:
         cur = con.cursor()
         cur.execute("SELECT * FROM user WHERE username=:username AND password=:password", 
