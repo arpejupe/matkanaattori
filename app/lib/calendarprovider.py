@@ -27,6 +27,7 @@ class Events(object):
         self.events += eventsObj.events
 
 def getiCalEvents(url):
+    url = str(url)
     events = cache.get(url)
     if events is None:
         events = Events()

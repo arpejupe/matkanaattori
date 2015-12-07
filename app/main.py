@@ -4,9 +4,13 @@ SESSION_KEY = '_cp_username'
 import cherrypy
 import requests
 import os
+import sys
 import template
 import auth
 import registration
+import sqlite3
+
+from lib import calendarprovider
 
 from registration import SubmitException
 
@@ -24,6 +28,7 @@ class MatkaClient(object):
     @cherrypy.tools.mako(filename="index.html")
     @cherrypy.expose
     def index(self):
+        #Tahan kaikki informaatiosala toistaiseksi
         return {"user" : cherrypy.session.get(SESSION_KEY)}
     
     @cherrypy.tools.mako(filename="login.html")
@@ -73,14 +78,23 @@ class MatkaClient(object):
                     'timezone': timezone,
                     'calendar_url': calendar_url}  
         
+    @cherrypy.tools.mako(filename="locate.html")
     @cherrypy.expose
-    @auth.require()
-    def locate(self, start, destination):
+    def locate(self, username):
         # Kortepohja x="3433184" y="6905220"
         # http://api.matka.fi/?a=3597369,6784330&b=3433184,6905220&user=matkanaattori&pass=ties532soa
-        response = requests.get("http://api.matka.fi/?a=" + start + "&b=" + destination + "&user=matkanaattori&pass=ties532soa")
-        xml = response.text
-        return xml
+        #response = requests.get("http://api.matka.fi/?a=" + start + "&b=" + destination + "&user=matkanaattori&pass=ties532soa")
+        #xml = response.text
+        #return xml
+        with sqlite3.connect(DB_STRING) as con:
+            cur = con.cursor()
+            cur.execute("SELECT * FROM user WHERE username=:username", 
+                        {'username': username})
+            result = cur.fetchone()
+            calendar_url = result[3]
+            
+            events = calendarprovider.getiCalEvents(calendar_url);
+            return {'result': events.getNextEvent()} 
     
 if __name__ == '__main__':
     conf = {
@@ -106,7 +120,8 @@ if __name__ == '__main__':
         },
         '/locate': {
             'tools.response_headers.on': True,
-            'tools.response_headers.headers': [('Content-Type', 'text/xml')],
+            'tools.sessions.on': True,
+            'tools.response_headers.headers': [('Content-Type', 'text/html')],
         },
         '/service': {
             'request.dispatch': cherrypy.dispatch.MethodDispatcher(),
@@ -121,6 +136,3 @@ if __name__ == '__main__':
     
     webapp = MatkaClient()
     cherrypy.quickstart(webapp, '/', conf)
-
-if __name__ == '__main__':
-    cherrypy.quickstart(Root())

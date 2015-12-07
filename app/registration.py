@@ -54,5 +54,5 @@ def submit(username, password, timezone, calendar_url):
         raise SubmitException("Registration failed please try again!")
 
 
-cherrypy.engine.subscribe('start', setup_database)
-cherrypy.engine.subscribe('stop', cleanup_database)
+#cherrypy.engine.subscribe('start', setup_database)
+#cherrypy.engine.subscribe('stop', cleanup_database)
