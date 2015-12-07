@@ -1,0 +1,29 @@
+/*  location.proto
+    protocol buffer message format definition
+    to generate python classes install protobuf and run protoc
+    $ protoc --python_out=./ ./location.proto
+    more info: https://developers.google.com/protocol-buffers/docs/pythontutorial
+*/
+
+package matkanaattori;
+
+message Response {
+	
+	enum StatusCode {
+		FOUND = 0;
+		NOT_FOUND = 1;
+		ERROR = 2;
+	}
+
+	required StatusCode status = 1;
+	
+	optional string requestedLocation = 2;
+
+	message Location {
+		required double lat = 1;
+		required double lng = 2;
+	}
+
+	repeated Location location = 3;
+
+}
