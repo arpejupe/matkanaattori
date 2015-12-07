@@ -1,2 +1,4 @@
 /nbproject
+/app/__pycache__
+*.pyc
 *~
