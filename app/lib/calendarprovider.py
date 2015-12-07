@@ -1,7 +1,6 @@
 from requests import get
 from icalendar import Calendar
 from datetime import datetime
-import pytz
 import pylibmc
 
 cache = pylibmc.Client(["127.0.0.1"], binary=True, behaviors={"tcp_nodelay": True, "ketama": True})
@@ -16,7 +15,8 @@ class Events(object):
     def getNextEvent(self):
         iterEvents = iter(self.events)
         nextEvent = next(iterEvents)
-        now = datetime.now(nextEvent["start"].tzinfo)
+        if nextEvent:
+            now = datetime.now(nextEvent["start"].tzinfo)
         for event in iterEvents:
             start = event["start"]
             if start > now and start < nextEvent["start"]:
@@ -31,16 +31,20 @@ def getiCalEvents(url):
     events = cache.get(url)
     if events is None:
         events = Events()
-        present = datetime.now(pytz.utc)
         r = get(url, stream=True)
         calendar = Calendar.from_ical(r.content)
+        iterEvents = iter(calendar.walk('vevent'))
+        nextEvent = next(iterEvents)
+        if nextEvent:
+            now = datetime.now(nextEvent["dtstart"].dt.tzinfo)
         for event in calendar.walk('vevent'):
             start = event.get("dtstart").dt
             location = event.get("location")
-            if start > present:
+            # exclue past events
+            if start > now:
                 events.addEvent({"start": start,
                                  "location": str(location)})
-        cache.set(url, events, time=1800)
+        cache.set(url, events, time=1800) # cache expire time in seconds
     return events
 
 def getEventsForAll(urls):
