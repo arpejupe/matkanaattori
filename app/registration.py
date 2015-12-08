@@ -12,6 +12,9 @@ from pyvalidate import validate, ValidationException
 class SubmitException(Exception):
     pass
 
+class DatabaseError(Exception):
+    pass
+
 def setup_database():
     with sqlite3.connect(DB_STRING) as con:
         cur = con.cursor()
