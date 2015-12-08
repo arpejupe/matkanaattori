@@ -93,7 +93,13 @@ class MatkaClient(object):
             result = cur.fetchone()
             calendar_url = result[3]
             
-            events = calendarprovider.getiCalEvents(calendar_url);
+            events = calendarprovider.getiCalEvents(calendar_url, "Europe/Helsinki");
+            # anetaan: geolokaatio
+            # pyydä: kalenterista next eventin aloitusaika
+            # muuta: next eventin location koordinaateiksi
+            # välitä: matka.fi:in aloitusaika (HHMM) ja koordinaatit (a, b) --> lähtöaika
+            # laske: lähtöaika - nykyaika = aikaa jäljellä
+            # palauta: aikaa jäljellä
             return {'result': events.getNextEvent()} 
     
 if __name__ == '__main__':
