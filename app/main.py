@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 DB_STRING = "matkanaattori.db"
 SESSION_KEY = '_cp_username'
 
@@ -9,8 +11,14 @@ import template
 import auth
 import registration
 import sqlite3
+import json
+import datetime
+import pytz
 
 from lib import calendarprovider
+from lib import coordinates
+from lib import jyulocation
+from lib import matkaprovider
 
 from registration import SubmitException
 
@@ -78,30 +86,41 @@ class MatkaClient(object):
                     'timezone': timezone,
                     'calendar_url': calendar_url}  
         
-    @cherrypy.tools.mako(filename="locate.html")
+    #@cherrypy.tools.mako(filename="locate.html")
     @cherrypy.expose
-    def locate(self, username):
-        # Kortepohja x="3433184" y="6905220"
-        # http://api.matka.fi/?a=3597369,6784330&b=3433184,6905220&user=matkanaattori&pass=ties532soa
-        #response = requests.get("http://api.matka.fi/?a=" + start + "&b=" + destination + "&user=matkanaattori&pass=ties532soa")
-        #xml = response.text
-        #return xml
+    def locate(self, username, lat=None, lng=None):
         with sqlite3.connect(DB_STRING) as con:
             cur = con.cursor()
             cur.execute("SELECT * FROM user WHERE username=:username", 
                         {'username': username})
             result = cur.fetchone()
             calendar_url = result[3]
-            
-            events = calendarprovider.getiCalEvents(calendar_url, "Europe/Helsinki");
-            # anetaan: geolokaatio
-            # pyydä: kalenterista next eventin aloitusaika
-            # muuta: next eventin location koordinaateiksi
-            # välitä: matka.fi:in aloitusaika (HHMM) ja koordinaatit (a, b) --> lähtöaika
-            # laske: lähtöaika - nykyaika = aikaa jäljellä
-            # palauta: aikaa jäljellä
-            return {'result': events.getNextEvent()} 
-    
+        # annettu: käyttäjänimi ja käyttäjän geolokaatio
+        # pyydä: käyttäjän kalenter(e)ista next eventin aloitusaika
+        # muuta: next eventin paikka koordinaateiksi
+        # muuta: koordinaatit kkj3:ksi
+        # välitä: matka.fi:in tapahtuman aloitusaika (HHMM), lähtö ja määränpään koordinaatit (a, b)
+        # vastaus: lähtöaika
+        # laske: lähtöaika - nykyaika = aikaa jäljellä (huomio eventin sattuminen eri päivälle)
+        # palauta: aikaa jäljellä
+        # testi url: localhost:8080/locate/juha?lat=64.2261178&lng=27.7306952
+        nextEvent = calendarprovider.getNextEvent(calendar_url)
+        event_location = jyulocation.getJyuLocation(nextEvent["location"])
+        kkj3_event_location = coordinates.WGS84lalo_to_KKJxy({"La": event_location.lat,
+                                                              "Lo": event_location.lng})
+        kkj3_geolocation = coordinates.WGS84lalo_to_KKJxy({"La": float(lat),
+                                                           "Lo": float(lng)})
+        a = "{0},{1}".format(int(kkj3_geolocation["I"]), int(kkj3_geolocation["P"]))
+        b = "{0},{1}".format(int(kkj3_event_location["I"]), int(kkj3_event_location["P"]))
+        # vaihda käyttäjän valitsema aikavyöhyke tähän
+        usertimezone = pytz.timezone("Europe/Helsinki")
+        arrival_time = nextEvent["startTime"].astimezone(usertimezone)
+        # hae walkspeed käyttäjän tiedoista
+        walkspeed = 3
+        departure_time = matkaprovider.getRouteDepartureTime(a, b, arrival_time, walkspeed)
+        timeLeft = departure_time - datetime.datetime.now()
+        return json.dumps({'result': timeLeft.seconds})
+
 if __name__ == '__main__':
     conf = {
         '/': {
@@ -127,7 +146,7 @@ if __name__ == '__main__':
         '/locate': {
             'tools.response_headers.on': True,
             'tools.sessions.on': True,
-            'tools.response_headers.headers': [('Content-Type', 'text/html')],
+            'tools.response_headers.headers': [('Content-Type', 'application/json')],
         },
         '/service': {
             'request.dispatch': cherrypy.dispatch.MethodDispatcher(),

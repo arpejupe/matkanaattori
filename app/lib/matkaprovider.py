@@ -11,7 +11,8 @@ def getRouteDepartureTime(a, b, time, walkspeed, timemode="2", show="1"):
     params = urlencode({
             "a": a, # start point
             "b": b, # destination point
-            "time": time, # time of arrival
+            "time": time.strftime("%H%M"), # time of arrival
+            "date": time.strftime("%Y%m%d"), # date of departure/arrival
             "timemode": timemode, # 1: time is the time of departure, 2: the time of arrival
             "show": show, # number of valid routing results
             "walkspeed": walkspeed, # walking speeds 1,2,3,4,5
