@@ -19,7 +19,11 @@ class LoginModel(object):
             if result is None: 
                 return u"Incorrect username or password." 
             else:
-                return None
+                userinfo = {"username": result[0],
+                            "timezone": result[2],
+                            "calendar_url": result[3]}
+                cherrypy.session.regenerate()      
+                cherrypy.session[constant.SESSION_KEY] = userinfo
 
 
     def check_auth(self, *args, **kwargs):

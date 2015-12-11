@@ -1,58 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Matkanaattori</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Javaninjat" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <title>Matkanaattori - ${pointer}</title>
         <link href="static/css/style.css" rel="stylesheet">
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     </head>
     <body>
-        <h1>Matkanaattori</h1>
-        % if user:
-            <p>Welcome using matkanaattori ${user}!</p>
-            <h2 id="timeleft">00:00</h2>
-            <a href="/logout">Logout</a>
-            <script type="text/javascript">
-                function geo_error() {
-                    console.log("no position available");
-                }
-                var geo_options = {
-                    enableHighAccuracy: true,
-                    maximumAge: 30000, // age of cached position is accepted in milliseconds
-                    //timeout: 27000 // geo_error when position retrieval times out
-                };
-
-                var timeleft = 0;
-                var timer;
-
-                function tic() {
-                    timeleft -= 1;
-                    var minutes = Math.floor(timeleft / 60);
-                    seconds = timeleft - minutes * 60;
-                    document.getElementById("timeleft").innerHTML = minutes + ":" + seconds;
-                }
-
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    $.ajax({
-                        url: "http://localhost:8080/locate/${user}",
-                        type: "GET",
-                        data: {"lat":position.coords.latitude,
-                               "lng":position.coords.longitude },
-                        contentType: "text/xml; charset=utf-8",
-                        success: function (data) {
-                            console.log(data);
-                            timeleft = data["result"];
-                            timer = setInterval(tic, 1000);
-                        },
-                        error: function (e) {
-                            console.log(e.message);
-                        }
-                    });
-                }, geo_error, geo_options);
-                // to watch position change
-                // var wpid = navigator.geolocation.watchPosition(geo_success, geo_error, geo_options);
-            </script>
-        % else:
-            <p>You need to <a href="/login">login</a> to use matkanaattori!</p>
-        % endif
+        <div id="matkanator">
+                <div id="timer_frame">
+                    <div id="header_title">Matkanator</div>
+                    <div id="header_subtext">Makes sure that you are in time!</div>
+                    % if not user:
+                        <div id="header_subtext"> go in <span id="time_left">06:13</span> to next event </div>
+                        <div id="header_subtext"> at <span id="next_event">Agora Alfa</span></div>
+                        <script src="static/js/geolocation.js"></script>
+                    % endif
+                </div>
+                <div id="user_frame">
+                    % if user:
+                        <ul>
+                            <li>Welcome using matkanaattori!</li>
+                            <li>User: ${user}</li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    % else:
+                        <ul>
+                            <li>Welcome using matkanaattori!</li>
+                            <li><a href="/logout">&raquo; Login</a></li>
+                            <li><a href="/register">&raquo; Register</a></li>
+                        </ul>
+                    % endif
+                </div>
+        </div>
     </body>
 </html>

@@ -2,7 +2,6 @@
 
 import cgi
 import cherrypy
-from pprint import pprint
 from config import constant
 
 __all__ = ['IndexController']
@@ -15,5 +14,10 @@ class IndexController(object):
     @cherrypy.expose
     @cherrypy.tools.mako(filename="index.html")
     def index(self):
-        pprint(cherrypy.session.get(constant.SESSION_KEY))
-        return {"user" : cherrypy.session.get(constant.SESSION_KEY)}
+        userinfo = cherrypy.session.get(constant.SESSION_KEY)
+        if userinfo is not None:
+            username = userinfo['username']
+        else:
+            username = None
+        return {"pointer": "index",
+                "user" : username}

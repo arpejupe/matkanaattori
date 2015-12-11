@@ -26,8 +26,6 @@ class LoginController(object):
             return {'msg': error_msg,
                     'username': username}
         else:
-            cherrypy.session.regenerate()
-            cherrypy.session[constant.SESSION_KEY] = cherrypy.request.login = username
             raise cherrypy.HTTPRedirect("/")
 
 class LogoutController(object):
