@@ -1,8 +1,7 @@
 import snappy
 import cgi
 import cachetools
-import location_pb2
-from location_pb2 import Response
+from library.location_pb2 import *
 from requests import get
 
 URL = "http://jyulocation.appspot.com/locate/"
