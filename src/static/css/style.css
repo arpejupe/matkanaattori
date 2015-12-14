@@ -193,6 +193,7 @@ input {
     margin-right: 5px;
     color: #CCE5FF;
     font-size: 32px;
+    white-space: nowrap;
 }
 
 #next_event {
@@ -200,4 +201,5 @@ input {
     margin-right: 5px;
     color: #CCFFDD;
     font-size: 32px;
+    white-space: nowrap;
 }

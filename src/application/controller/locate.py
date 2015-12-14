@@ -16,6 +16,7 @@ from config import constant
 class LocateController(object):
 
     @cherrypy.expose
+    @cherrypy.tools.json_out()
     def index(self, lat=None, lng=None):
         userinfo = cherrypy.session.get(constant.SESSION_KEY)
         if userinfo is None:
@@ -43,4 +44,4 @@ class LocateController(object):
         walkspeed = 3
         departure_time = matkaprovider.getRouteDepartureTime(a, b, arrival_time, walkspeed)
         timeLeft = departure_time - datetime.datetime.now()
-        return json.dumps({'result': timeLeft.seconds})
+        return {'time_left': timeLeft.seconds, 'next_event': nextEvent["location"]}

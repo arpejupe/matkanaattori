@@ -14,30 +14,55 @@ var geo_options = {
 
 var timeleft = 0;
 var timer;
+var userGeolocation;
 
 function tic() {
     timeleft -= 1;
-    var minutes = Math.floor(timeleft / 60);
-    seconds = timeleft - minutes * 60;
-    document.getElementById("timeleft").innerHTML = minutes + ":" + seconds;
+    updateTime();
 }
 
-navigator.geolocation.getCurrentPosition(function(position) {
+function updateTime() {
+    var hours = Math.floor(timeleft / 3600);
+    var minutes = Math.floor((timeleft - (hours * 3600)) / 60);
+    var seconds = timeleft - (hours * 3600) - (minutes * 60);
+    $("#time_left").text(hours + "h " + minutes + "m " + seconds + "s");
+}
+
+function geo_success(position) {
+
+    userGeolocation = position;
+
     $.ajax({
-        url: "http://localhost:8080/locate/${user}",
+        url: "http://localhost:8080/locate/",
         type: "GET",
-        data: {"lat":position.coords.latitude,
-               "lng":position.coords.longitude },
+        data: {
+            "lat": position.coords.latitude,
+            "lng": position.coords.longitude
+        },
         contentType: "text/xml; charset=utf-8",
         success: function (data) {
             console.log(data);
-            timeleft = data["result"];
+            timeleft = data["time_left"];
+            $("#next_event").text(data["next_event"]);
+            clearInterval(timer);
             timer = setInterval(tic, 1000);
+            updateTime();
         },
         error: function (e) {
             console.log(e.message);
         }
     });
+}
+
+navigator.geolocation.getCurrentPosition(function (position) {
+    userGeolocation = position;
+    geo_success(position);
+    // to watch position change
+    var wpid = navigator.geolocation.watchPosition(function (position) {
+        //console.log(position.coords);
+        if (position.coords.latitude != userGeolocation.coords.latitude
+            || position.coords.longitude != userGeolocation.coords.longitude) {
+            geo_success(position);
+        }
+    }, geo_error, geo_options);
 }, geo_error, geo_options);
-// to watch position change
-// var wpid = navigator.geolocation.watchPosition(geo_success, geo_error, geo_options);

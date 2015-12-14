@@ -15,9 +15,9 @@
                 <div id="timer_frame">
                     <div id="header_title">Matkanator</div>
                     <div id="header_subtext">Makes sure that you are in time!</div>
-                    % if not user:
-                        <div id="header_subtext"> go in <span id="time_left">06:13</span> to next event </div>
-                        <div id="header_subtext"> at <span id="next_event">Agora Alfa</span></div>
+                    % if user:
+                        <div id="header_subtext"> go in <span id="time_left"></span> to next event </div>
+                        <div id="header_subtext"> at <span id="next_event"></span></div>
                         <script src="static/js/geolocation.js"></script>
                     % endif
                 </div>
