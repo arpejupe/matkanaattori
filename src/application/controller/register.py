@@ -17,7 +17,8 @@ class RegisterController(object):
     def index(self, username=None, password=None, timezone=None, calendar_url=None):
         if username is None or password is None or timezone is None or calendar_url is None:
             return {'register': False,
-                    'msg': 'Please register by providing username, password, timezone and calendar url',
+                    'pointer': "Register",
+                    'msg': 'Please register by providing the following information.',
                     'username': xstr(username),
                     'password': xstr(password),
                     'timezone': xstr(timezone),
@@ -32,7 +33,8 @@ class RegisterController(object):
                     'msg': 'Regisration successful!'} 
         except SubmitException as ex:
             return {'register': False,
-                    'msg': ex.message,
+                    'pointer': "Register",
+                    'error_msg': ex.message,
                     'username': username,
                     'password': password,
                     'timezone': timezone,

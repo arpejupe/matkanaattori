@@ -6,36 +6,38 @@
         <meta name="keywords" content="" />
         <meta name="author" content="Javaninjat" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-        <title>Matkanaattori - ${pointer}</title>
+        <title>Matkanaator - ${pointer}</title>
         <link href="static/css/style.css" rel="stylesheet">
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     </head>
     <body>
         <div id="matkanator">
-                <div id="timer_frame">
-                    <div id="header_title">Matkanator</div>
-                    <div id="header_subtext">Makes sure that you are in time!</div>
-                    % if user:
-                        <div id="header_subtext"> go in <span id="time_left"></span> to next event </div>
-                        <div id="header_subtext"> at <span id="next_event"></span></div>
-                        <script src="static/js/geolocation.js"></script>
-                    % endif
-                </div>
-                <div id="user_frame">
-                    % if user:
-                        <ul>
-                            <li>Welcome using matkanaattori!</li>
-                            <li>User: ${user}</li>
-                            <li><a href="/logout">Logout</a></li>
-                        </ul>
-                    % else:
-                        <ul>
-                            <li>Welcome using matkanaattori!</li>
-                            <li><a href="/login">&raquo; Login</a></li>
-                            <li><a href="/register">&raquo; Register</a></li>
-                        </ul>
-                    % endif
-                </div>
+            <div id="header_frame">
+                <h1>Matkanator</h1>
+                <h2>Makes sure that you are in time!<h2>
+            </div>
+            <div id="user_frame">
+                % if user:
+                    <ul>
+                        <li>Welcome using matkanaattori!</li>
+                        <li>User: ${user}</li>
+                        <li><a href="/logout">&raquo; Logout</a></li>
+                    </ul>
+                % else:
+                    <ul>
+                        <li>Welcome using matkanaattori!</li>
+                        <li><a href="/login">&raquo; Login</a></li>
+                        <li><a href="/register">&raquo; Register</a></li>
+                    </ul>
+                % endif
+            </div>
+            <div id="timer_frame">
+                % if user:
+                    <div id="header_subtext"> go in <span id="time_left"></span> to next event </div>
+                    <div id="header_subtext"> at <span id="next_event"></span></div>
+                    <script src="static/js/geolocation.js"></script>
+                % endif
+            </div>
         </div>
     </body>
 </html>

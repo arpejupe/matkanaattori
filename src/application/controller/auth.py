@@ -15,16 +15,18 @@ class LoginController(object):
     @cherrypy.tools.mako(filename="login.html")
     @cherrypy.expose
     def index(self, username=None, password=None):
-        return {'msg': 'Please login by giving username and password:',
-                'username': xstr(username)}
+        return {'msg': 'Please login by giving username and password',
+                'username': xstr(username),
+                'pointer': "Login"}
                     
     @cherrypy.tools.mako(filename="login.html")
     @cherrypy.expose    
     def submit(self, username=None, password=None):
         error_msg = self.login.check_credentials(username, password)
         if error_msg:
-            return {'msg': error_msg,
-                    'username': username}
+            return {'error_msg': error_msg,
+                    'username': xstr(username),
+                    'pointer': "Login"}
         else:
             raise cherrypy.HTTPRedirect("/")
 

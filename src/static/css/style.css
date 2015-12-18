@@ -18,42 +18,33 @@ html, body {
 
 p {
     text-align: left;
-    color: #606060;
+    color: #EDEFF4;
     font-size: 14px !important;
     line-height: 1.5em;
     padding: 5px;
 }
 
 h1 {
-    text-align: left;
-    margin: 10px 20px 15px 15px;
-    padding: 0px 0px 5px 0px;
-    font-family: Helvetica, Verdana;
-    font-size: 20px;
-    color: #385A68;
-    border-bottom: 1px dashed #C6C6C6;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
 }
 
 h2 {
-    text-align: left;
-    margin: 5px 10px 15px 10px;
-    padding: 0px 0px 5px 0px;
-    font-family: Helvetica, Verdana;
     font-size: 16px;
-    font-weight: bold;
-    color: #8B8B8B;
-    border-bottom: 1px dashed #C6C6C6;
+    color: #EDEFF4;
+    font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
+    float: left;
+    font-weight: normal;
+    min-width: 160px !important;
 }
 
-h3 {
-    text-align: left;
-    margin: 5px 10px 15px 10px;
-    padding: 5px 5px 5px 5px;
-    font-family: Helvetica, Verdana;
-    font-size: 16px;
-    font-weight: bold;
-    color: #606060;
-    background: #EDEFF4;
+.msg {
+    color: #385a68;
+}
+.error_msg {
+    color: #FF4719;
 }
 
 hr {
@@ -77,11 +68,34 @@ ul, ol  {
 }
 
 label {
-    margin: 0px 0px 10px 15px;
+    display: inline-block;
+    margin: 0px 10px 5px 0px;
+    text-align: left;
+    color: #EDEFF4;
+    font-size: 14px !important;
 }
 
 input {
+    display: inline-block;
     padding: 5px;
+}
+
+input:not([type]), input[type="text"], input[type="password"] {
+    margin: 0px 20px 15px 0px;
+    width: 90%;
+    min-width: 160px !important;
+}
+
+select {
+    display: inline-block;
+    margin: 0px 0px 10px 0px;
+    text-align: left;
+    width: 98%;
+    font-size: 14px !important;
+    clear: both;
+    padding: 5px;
+    position: relative;
+    left: -2px;
 }
 
 .text_orange {
@@ -145,6 +159,31 @@ input {
     min-height: 200px;
     min-height: 250px;
     position: relative;
+    max-width: 540px;
+}
+
+#header_frame {
+    float: left;
+    width: 40%;
+    padding: 15px;
+    max-width: 250px;
+    margin-right: 20px;
+}
+
+#login_frame {
+    margin: 0px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    max-width: 45%;
+    min-width: 180px !important;
+}
+
+#register_frame {
+    margin: 0px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    max-width: 45%;
+    min-width: 180px !important;
 }
 
 #timer_frame {
@@ -178,7 +217,6 @@ input {
     color: #FFFFFF;
     font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
-
 }
 
 #header_subtext {
@@ -202,4 +240,10 @@ input {
     color: #CCFFDD;
     font-size: 32px;
     white-space: nowrap;
+}
+
+#add_calendar {
+    float: right;
+    clear: both;
+    margin: 0px 0px 20px 0px;
 }

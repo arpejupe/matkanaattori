@@ -6,19 +6,30 @@
         <meta name="keywords" content="" />
         <meta name="author" content="Javaninjat" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-        <title>Matkanaattori - Login</title>
+        <title>Matkanator - ${pointer}</title>
         <link href="../static/css/style.css" rel="stylesheet">
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     </head>
     <body>
         <div id="matkanator">
-            <h1>Login</h1>
-            <p>${msg}</p>
-            <form action="submit" method="post">
-                <div><label> User Name: <input type="text" name="username" value="${username}"/> </label></div>
-                <div><label> Password: <input type="password" name="password"/> </label></div>
-                <div><input type="submit" value="Login"/></div>
-            </form>
+            <div id="header_frame">
+                <h1>Matkanator</h1>
+                % if msg:
+                    <h2>${msg}</h2>
+                % endif
+                % if error_msg:
+                    <h2 class="error_msg">${error_msg}</h2>
+                % endif 
+            </div>
+            <div id="login_frame">
+                <form id="login_form" action="submit" method="post">
+                    <label for="input_username">User Name:</label>
+                    <input id="username_input" type="text" name="username" value="${username}"/>
+                    <label for="input_password">Password:</label>
+                    <input id="password_input" type="password" name="password"/>
+                    <input class="button float_right" type="submit" value="Login"/>
+                </form>
+            </div>
         </div>
     </body>
 </html>
