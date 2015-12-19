@@ -4,9 +4,8 @@ import cherrypy
 
 from application.model.register import RegisterModel, SubmitException
 from library.format import xstr
-
 from config import constant
-   
+
 class RegisterController(object):
     
     def __init__(self):
@@ -21,21 +20,23 @@ class RegisterController(object):
                     'msg': 'Please register by providing the following information.',
                     'username': xstr(username),
                     'password': xstr(password),
-                    'timezone': xstr(timezone),
                     'calendar_url': xstr(calendar_url)}
                     
     @cherrypy.tools.mako(filename="register.html")
     @cherrypy.expose
     def submit(self, username=None, password=None, timezone=None, calendar_url=None):
+        # If calendar_url is not list, convert then
+        if isinstance(calendar_url, basestring):
+            calendar_url = [calendar_url]
         try:
             self.register.submit(username, password, timezone, calendar_url)
             return {'register': True,
-                    'msg': 'Regisration successful!'} 
+                    'pointer': "Register",
+                    'msg': 'Regisration successful! You can now login.'} 
         except SubmitException as ex:
             return {'register': False,
                     'pointer': "Register",
                     'error_msg': ex.message,
                     'username': username,
                     'password': password,
-                    'timezone': timezone,
                     'calendar_url': calendar_url}  

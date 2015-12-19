@@ -14,9 +14,9 @@ class IndexController(object):
     @cherrypy.expose
     @cherrypy.tools.mako(filename="index.html")
     def index(self):
-        userinfo = cherrypy.session.get(constant.SESSION_KEY)
-        if userinfo is not None:
-            username = userinfo['username']
+        user_info = cherrypy.session.get(constant.SESSION_KEY)
+        if user_info is not None:
+            username = user_info['username']
         else:
             username = None
         return {"pointer": "index",

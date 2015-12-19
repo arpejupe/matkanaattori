@@ -32,6 +32,7 @@ class Main(object):
         # Set constants
         constant.DB = "matkanaattori.db"
         constant.SESSION_KEY = "_cp_user"
+        constant.SALT = "javaninjat2015" # could be anything you like
 
         # Template engine tool
         from library.template import MakoLoader
@@ -57,6 +58,8 @@ class Main(object):
         # Load database library
         from library.database import Database
         database = Database()
+        
+        # Start database by using start and clean it using stop. Comment these after initialization
         #cherrypy.engine.subscribe('start', database.setup)
         #cherrypy.engine.subscribe('stop', database.cleanup)
         

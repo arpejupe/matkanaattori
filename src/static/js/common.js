@@ -6,8 +6,8 @@ $(function() {
     $(add_button).click(function(e){
         e.preventDefault();
         if(x < max_fields){
+            $(calendars).append('<input type="text" name="calendar_url" value=""/>');
             x++;
-            $(calendars).append('<input type="text" name="calendar_url[]" value=""/>');
         }
     });
 });

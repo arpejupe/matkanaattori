@@ -41,7 +41,6 @@ class LocateController(object):
         # vaihda käyttäjän valitsema aikavyöhyke tähän
         arrival_time = nextEvent["startTime"].astimezone(pytz.timezone(userinfo['timezone']))
         # hae walkspeed käyttäjän tiedoista
-        walkspeed = 3
-        departure_time = matkaprovider.getRouteDepartureTime(a, b, arrival_time, walkspeed)
+        departure_time = matkaprovider.getRouteDepartureTime(a, b, arrival_time, userinfo["walking_speed"] )
         timeLeft = departure_time - datetime.datetime.now()
         return {'time_left': timeLeft.seconds, 'next_event': nextEvent["location"]}

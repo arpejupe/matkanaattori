@@ -20,6 +20,7 @@ def getCalendarEvents(url):
 def getNextEvent(*urls):
     allevents = []
     for url in urls:
+        url = str(url)
         cachedEvents = cache.get(url)
         if cachedEvents is None:
             cachedEvents = getCalendarEvents(url)

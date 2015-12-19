@@ -22,26 +22,42 @@
                     <h2 class="error_msg">${error_msg}</h2>
                 % endif 
             </div>
-            <div id="register_frame">
-                <form id="register_form" action="submit" method="post">
-                    <label for="input_username">User Name:</label>
-                    <input type="text" name="username" value="${username}"/>
-                    <label for="input_password">Password:</label>
-                    <input type="password" name="password" value="${password}"/> 
-                    <label for="input_timezone">Timezone:</label>
-                    <select id="input_timezone">
-                        % for timezone in ("UTC-3:00", "UTC-2:00", "UTC-1:00", "UTC+0:00", "UTC+1:00", "UTC+2:00", "UTC+3:00"):
-                            <option value="${timezone}"> ${timezone}</option>
-                        % endfor
-                    </select>
-                    <label for="input_calendar_url">Calendar URL:</label>
-                    <input type="text" name="calendar_url[]" value="${calendar_url}"/>
-                    <div id="additional_calendars">
-                    </div>
-                    <a href="#" id="add_calendar">[add more calendars]</a>
-                    <input class="button float_right" type="submit" value="Register"/></div>
-                </form>
-            </div>
+            % if register is False:
+                <div id="register_frame">
+                    <form id="register_form" action="submit" method="post">
+                        <label for="input_username">User Name:</label>
+                        <input type="text" name="username" value="${username}"/>
+                        <label for="input_password">Password:</label>
+                        <input type="password" name="password" value="${password}"/> 
+                        <label for="input_timezone">Timezone:</label>
+                        <select name="timezone" id="input_timezone">
+                            % for timezone in ("UTC-3:00", "UTC-2:00", "UTC-1:00", "UTC+0:00", "UTC+1:00", "UTC+2:00", "UTC+3:00"):
+                                <option value="${timezone}"> ${timezone}</option>
+                            % endfor
+                        </select>
+                        <label for="input_calendar_url">Calendar URL:</label>
+                        % if calendar_url:
+                            % for url in calendar_url:
+                                <input type="text" name="calendar_url" value="${url}"/>
+                            % endfor
+                        % else:
+                            <input type="text" name="calendar_url" value=""/>
+                        % endif
+                        <div id="additional_calendars">
+                        </div>
+                        <a href="#" id="add_calendar">[add more calendars]</a>
+                        <input class="button float_right" type="submit" value="Register"/></div>
+                    </form>
+                </div>
+            % else:
+                <div id="user_frame">
+                    <ul>
+                        <li>Welcome using matkanaattori!</li>
+                        <li><a href="/login">&raquo; Login</a></li>
+                        <li><a href="/register">&raquo; Register</a></li>
+                    </ul>
+                </div>
+            % endif
         </div>
     </body>
 </html>

@@ -2,7 +2,9 @@
 
 import cherrypy
 import sqlite3
+import hashlib, uuid
 
+from application.model import user
 from cgi import escape
 from config import constant
 
@@ -12,6 +14,8 @@ class LoginModel(object):
         username = escape(username)
         password = escape(password)
         with sqlite3.connect(constant.DB) as con:
+            salt = uuid.uuid4().hex
+            password = hashlib.sha512(password + constant.SALT).hexdigest()
             cur = con.cursor()
             cur.execute("SELECT * FROM user WHERE username=:username AND password=:password", 
                         {'username': username, 'password': password})
@@ -19,9 +23,7 @@ class LoginModel(object):
             if result is None: 
                 return u"Incorrect username or password." 
             else:
-                userinfo = {"username": result[0],
-                            "timezone": result[2],
-                            "calendar_url": result[3]}
+                userinfo = user.get_info(result[0])
                 cherrypy.session.regenerate()      
                 cherrypy.session[constant.SESSION_KEY] = userinfo
 
