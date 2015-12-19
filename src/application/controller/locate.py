@@ -30,7 +30,7 @@ class LocateController(object):
         # laske: lähtöaika - nykyaika = aikaa jäljellä (huomio eventin sattuminen eri päivälle)
         # palauta: aikaa jäljellä
         # testi url: localhost:8080/locate/juha?lat=64.2261178&lng=27.7306952
-        nextEvent = calendar.getNextEvent(userinfo['calendar_url'])
+        nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
         event_location = jyulocation.getJyuLocation(nextEvent["location"])
         kkj3_event_location = coordinates.WGS84lalo_to_KKJxy({"La": event_location.lat,
                                                               "Lo": event_location.lng})
