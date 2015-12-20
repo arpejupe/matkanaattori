@@ -66,8 +66,8 @@ class Main(object):
         database = Database()
         
         # Start database by using start and clean it using stop. Comment these after initialization
-        #cherrypy.engine.subscribe('start', database.setup)
         #cherrypy.engine.subscribe('stop', database.cleanup)
+        #cherrypy.engine.subscribe('start', database.setup)
         
     def run(self):
         engine = cherrypy.engine

@@ -1491,3 +1491,606 @@ InvalidSchema: No connection adapters were found for '(u'https://korppi.jyu.fi/c
 [20/Dec/2015:16:41:50] ENGINE Bus EXITING
 [20/Dec/2015:16:41:50] ENGINE Bus EXITED
 [20/Dec/2015:16:41:50] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:16:43:54] ENGINE Listening for SIGHUP.
+[20/Dec/2015:16:43:54] ENGINE Listening for SIGTERM.
+[20/Dec/2015:16:43:54] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:16:43:55] ENGINE Bus STARTING
+[20/Dec/2015:16:43:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:16:43:55] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:16:43:55] ENGINE Bus STARTED
+[20/Dec/2015:16:44:00] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:16:49:51] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:16:49:51] ENGINE Bus STOPPING
+[20/Dec/2015:16:49:51] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:16:49:51] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:16:49:51] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:16:49:51] ENGINE Bus STOPPED
+[20/Dec/2015:16:49:51] ENGINE Bus EXITING
+[20/Dec/2015:16:49:51] ENGINE Bus EXITED
+[20/Dec/2015:16:49:51] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:16:49:54] ENGINE Listening for SIGHUP.
+[20/Dec/2015:16:49:54] ENGINE Listening for SIGTERM.
+[20/Dec/2015:16:49:54] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:16:49:54] ENGINE Bus STARTING
+[20/Dec/2015:16:49:54] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:16:49:54] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:16:49:54] ENGINE Bus STARTED
+[20/Dec/2015:16:49:57] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:16:50:16]  key must be an instance of str
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 23, in getNextEvent
+    cachedEvents = cache.get(url)
+TypeError: key must be an instance of str
+[20/Dec/2015:16:51:00] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:16:51:00] ENGINE Bus STOPPING
+[20/Dec/2015:16:51:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:16:51:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:16:51:00] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:16:51:00] ENGINE Bus STOPPED
+[20/Dec/2015:16:51:00] ENGINE Bus EXITING
+[20/Dec/2015:16:51:00] ENGINE Bus EXITED
+[20/Dec/2015:16:51:00] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:16:51:02] ENGINE Listening for SIGHUP.
+[20/Dec/2015:16:51:02] ENGINE Listening for SIGTERM.
+[20/Dec/2015:16:51:02] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:16:51:02] ENGINE Bus STARTING
+[20/Dec/2015:16:51:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:16:51:02] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:16:51:02] ENGINE Bus STARTED
+[20/Dec/2015:16:51:04] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:16:51:10]  key must be an instance of str
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = cache.get(url)
+TypeError: key must be an instance of str
+[20/Dec/2015:16:53:11] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:16:53:11] ENGINE Bus STOPPING
+[20/Dec/2015:16:53:11] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:16:53:11] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:16:53:11] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:16:53:11] ENGINE Bus STOPPED
+[20/Dec/2015:16:53:11] ENGINE Bus EXITING
+[20/Dec/2015:16:53:11] ENGINE Bus EXITED
+[20/Dec/2015:16:53:11] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:16:53:13] ENGINE Listening for SIGHUP.
+[20/Dec/2015:16:53:13] ENGINE Listening for SIGTERM.
+[20/Dec/2015:16:53:13] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:16:53:13] ENGINE Bus STARTING
+[20/Dec/2015:16:53:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:16:53:13] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:16:53:13] ENGINE Bus STARTED
+[20/Dec/2015:16:53:15] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:16:53:22]  key must be an instance of str
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = cache.get(url)
+TypeError: key must be an instance of str
+[20/Dec/2015:16:55:30] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:16:55:30] ENGINE Bus STOPPING
+[20/Dec/2015:16:55:30] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:16:55:30] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:16:55:30] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:16:55:30] ENGINE Bus STOPPED
+[20/Dec/2015:16:55:30] ENGINE Bus EXITING
+[20/Dec/2015:16:55:30] ENGINE Bus EXITED
+[20/Dec/2015:16:55:30] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:16:55:32] ENGINE Listening for SIGHUP.
+[20/Dec/2015:16:55:32] ENGINE Listening for SIGTERM.
+[20/Dec/2015:16:55:32] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:16:55:32] ENGINE Bus STARTING
+[20/Dec/2015:16:55:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:16:55:32] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:16:55:32] ENGINE Bus STARTED
+[20/Dec/2015:16:55:35] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:17:02:27] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:02:27] ENGINE Bus STOPPING
+[20/Dec/2015:17:02:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:02:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:02:27] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:17:02:27] ENGINE Bus STOPPED
+[20/Dec/2015:17:02:27] ENGINE Bus EXITING
+[20/Dec/2015:17:02:27] ENGINE Bus EXITED
+[20/Dec/2015:17:02:27] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:02:29] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:02:29] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:02:29] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:02:29] ENGINE Bus STARTING
+[20/Dec/2015:17:02:29] ENGINE Error in 'start' listener <bound method Database.setup of <library.database.Database object at 0x7f3580346750>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/process/wspbus.py", line 205, in publish
+    output.append(listener(*args, **kwargs))
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/database.py", line 14, in setup
+    cur.execute("CREATE TABLE user (user_id, username, password, timezone, walking_speed)")
+OperationalError: table user already exists
+
+[20/Dec/2015:17:02:29] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:02:29] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:02:29] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/process/wspbus.py", line 243, in start
+    self.publish('start')
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/process/wspbus.py", line 223, in publish
+    raise exc
+ChannelFailures: OperationalError('table user already exists',)
+
+[20/Dec/2015:17:02:29] ENGINE Bus STOPPING
+[20/Dec/2015:17:02:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:02:30] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:02:30] ENGINE Bus STOPPED
+[20/Dec/2015:17:02:30] ENGINE Bus EXITING
+[20/Dec/2015:17:02:30] ENGINE Bus EXITED
+[20/Dec/2015:17:02:42] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:02:42] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:02:42] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:02:42] ENGINE Bus STARTING
+[20/Dec/2015:17:02:43] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:02:43] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:02:43] ENGINE Bus STARTED
+[20/Dec/2015:17:05:37] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:05:37] ENGINE Bus STOPPING
+[20/Dec/2015:17:05:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:05:37] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:05:37] ENGINE Bus STOPPED
+[20/Dec/2015:17:05:37] ENGINE Bus EXITING
+[20/Dec/2015:17:05:37] ENGINE Bus EXITED
+[20/Dec/2015:17:05:37] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:05:38] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:05:38] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:05:38] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:05:38] ENGINE Bus STARTING
+[20/Dec/2015:17:05:39] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:05:39] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:05:39] ENGINE Bus STARTED
+[20/Dec/2015:17:05:43] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:17:07:47] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:07:47] ENGINE Bus STOPPING
+[20/Dec/2015:17:07:47] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:07:47] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:07:47] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:17:07:48] ENGINE Bus STOPPED
+[20/Dec/2015:17:07:48] ENGINE Bus EXITING
+[20/Dec/2015:17:07:48] ENGINE Bus EXITED
+[20/Dec/2015:17:07:48] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:07:49] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:07:49] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:07:49] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:07:49] ENGINE Bus STARTING
+[20/Dec/2015:17:07:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:07:49] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:07:49] ENGINE Bus STARTED
+[20/Dec/2015:17:12:35] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:12:35] ENGINE Bus STOPPING
+[20/Dec/2015:17:12:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:12:35] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:12:36] ENGINE Bus STOPPED
+[20/Dec/2015:17:12:36] ENGINE Bus EXITING
+[20/Dec/2015:17:12:36] ENGINE Bus EXITED
+[20/Dec/2015:17:12:36] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:12:37] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:12:37] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:12:37] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:12:37] ENGINE Bus STARTING
+[20/Dec/2015:17:12:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:12:37] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:12:37] ENGINE Bus STARTED
+[20/Dec/2015:17:12:45] HTTP 
+Request Headers:
+  Content-Length: 28
+  REFERER: http://localhost:8080/login/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=ac26b3efbd8645f8d3b9117b47429f12172eaa73
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[20/Dec/2015:17:12:45] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/auth.py", line 25, in submit
+    error_msg = self.login.check_credentials(username, password)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/login.py", line 21, in check_credentials
+    {'username': username, 'password': password})
+OperationalError: no such table: user
+[20/Dec/2015:17:13:06] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:13:06] ENGINE Bus STOPPING
+[20/Dec/2015:17:13:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:13:06] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:13:06] ENGINE Bus STOPPED
+[20/Dec/2015:17:13:06] ENGINE Bus EXITING
+[20/Dec/2015:17:13:06] ENGINE Bus EXITED
+[20/Dec/2015:17:13:06] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:13:08] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:13:08] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:13:08] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:13:08] ENGINE Bus STARTING
+[20/Dec/2015:17:13:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:13:08] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:13:08] ENGINE Bus STARTED
+[20/Dec/2015:17:13:20] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:13:20] ENGINE Bus STOPPING
+[20/Dec/2015:17:13:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:13:20] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:13:20] ENGINE Bus STOPPED
+[20/Dec/2015:17:13:20] ENGINE Bus EXITING
+[20/Dec/2015:17:13:20] ENGINE Bus EXITED
+[20/Dec/2015:17:13:20] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:13:22] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:13:22] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:13:22] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:13:22] ENGINE Bus STARTING
+[20/Dec/2015:17:13:22] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:13:23] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:13:23] ENGINE Bus STARTED
+[20/Dec/2015:17:13:36] HTTP 
+Request Headers:
+  Content-Length: 244
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=b197870180dd6c75df8ede98c6b127552c979657
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[20/Dec/2015:17:13:36] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 29, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 72, in submit
+    self.check_if_exists(username)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 45, in check_if_exists
+    {'username': username})
+OperationalError: no such table: user
+[20/Dec/2015:17:14:04] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:14:04] ENGINE Bus STOPPING
+[20/Dec/2015:17:14:04] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:14:04] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:14:04] ENGINE Bus STOPPED
+[20/Dec/2015:17:14:04] ENGINE Bus EXITING
+[20/Dec/2015:17:14:04] ENGINE Bus EXITED
+[20/Dec/2015:17:14:04] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:14:06] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:14:06] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:14:06] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:14:06] ENGINE Bus STARTING
+[20/Dec/2015:17:14:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:14:07] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:14:07] ENGINE Bus STARTED
+[20/Dec/2015:17:14:26] HTTP 
+Request Headers:
+  Content-Length: 28
+  REFERER: http://localhost:8080/login/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=b9067fd4f8a9f2ff5786dddcfe45f7a70e13031a
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[20/Dec/2015:17:14:26] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/auth.py", line 25, in submit
+    error_msg = self.login.check_credentials(username, password)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/login.py", line 26, in check_credentials
+    userinfo = user.get_info(result[0])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/user.py", line 20, in get_info
+    pprint(calendar_info)
+NameError: global name 'calendar_info' is not defined
+[20/Dec/2015:17:14:55] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:14:55] ENGINE Bus STOPPING
+[20/Dec/2015:17:14:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:14:55] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:14:55] ENGINE Bus STOPPED
+[20/Dec/2015:17:14:55] ENGINE Bus EXITING
+[20/Dec/2015:17:14:55] ENGINE Bus EXITED
+[20/Dec/2015:17:14:55] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:14:57] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:14:57] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:14:57] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:14:57] ENGINE Bus STARTING
+[20/Dec/2015:17:14:57] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:14:57] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:14:57] ENGINE Bus STARTED
+[20/Dec/2015:17:15:01] HTTP 
+Request Headers:
+  Content-Length: 28
+  REFERER: http://localhost:8080/login/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=ab0187301a30821813280ee9e49ebace3d39ce5e
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[20/Dec/2015:17:15:01] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/auth.py", line 25, in submit
+    error_msg = self.login.check_credentials(username, password)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/login.py", line 26, in check_credentials
+    userinfo = user.get_info(result[0])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/user.py", line 24, in get_info
+    calendar_url[i] = url
+NameError: global name 'calendar_url' is not defined
+[20/Dec/2015:17:15:37] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:15:37] ENGINE Bus STOPPING
+[20/Dec/2015:17:15:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:15:37] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:15:37] ENGINE Bus STOPPED
+[20/Dec/2015:17:15:37] ENGINE Bus EXITING
+[20/Dec/2015:17:15:37] ENGINE Bus EXITED
+[20/Dec/2015:17:15:37] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:15:39] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:15:39] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:15:39] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:15:39] ENGINE Bus STARTING
+[20/Dec/2015:17:15:39] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:15:39] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:15:39] ENGINE Bus STARTED
+[20/Dec/2015:17:15:41] HTTP 
+Request Headers:
+  Content-Length: 28
+  REFERER: http://localhost:8080/login/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=f12faafacc7b8900141c1488a38aef4f550ef011
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[20/Dec/2015:17:15:41] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/auth.py", line 25, in submit
+    error_msg = self.login.check_credentials(username, password)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/login.py", line 26, in check_credentials
+    userinfo = user.get_info(result[0])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/user.py", line 25, in get_info
+    calendar_url[i] = url
+IndexError: list assignment index out of range
+[20/Dec/2015:17:16:55] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:16:55] ENGINE Bus STOPPING
+[20/Dec/2015:17:16:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:16:55] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:16:55] ENGINE Bus STOPPED
+[20/Dec/2015:17:16:55] ENGINE Bus EXITING
+[20/Dec/2015:17:16:55] ENGINE Bus EXITED
+[20/Dec/2015:17:16:55] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:16:57] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:16:57] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:16:57] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:16:57] ENGINE Bus STARTING
+[20/Dec/2015:17:16:57] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:16:57] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:16:57] ENGINE Bus STARTED
+[20/Dec/2015:17:17:00] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:17:17:51] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:17:51] ENGINE Bus STOPPING
+[20/Dec/2015:17:17:51] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:17:51] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:17:51] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:17:17:51] ENGINE Bus STOPPED
+[20/Dec/2015:17:17:51] ENGINE Bus EXITING
+[20/Dec/2015:17:17:51] ENGINE Bus EXITED
+[20/Dec/2015:17:17:51] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:17:58] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:17:58] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:17:58] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:17:58] ENGINE Bus STARTING
+[20/Dec/2015:17:17:58] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:17:58] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:17:58] ENGINE Bus STARTED
+[20/Dec/2015:17:18:01] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:17:18:08]  key must be an instance of str
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = cache.get(url)
+TypeError: key must be an instance of str
+[20/Dec/2015:17:19:45] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:19:45] ENGINE Bus STOPPING
+[20/Dec/2015:17:19:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:19:45] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:19:45] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:17:19:45] ENGINE Bus STOPPED
+[20/Dec/2015:17:19:45] ENGINE Bus EXITING
+[20/Dec/2015:17:19:45] ENGINE Bus EXITED
+[20/Dec/2015:17:19:45] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:19:46] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:19:46] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:19:46] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:19:46] ENGINE Bus STARTING
+[20/Dec/2015:17:19:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:19:47] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:19:47] ENGINE Bus STARTED
+[20/Dec/2015:17:19:51] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:17:19:59]  key must be an instance of str
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = cache.get(url)
+TypeError: key must be an instance of str
+[20/Dec/2015:17:23:00] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:23:00] ENGINE Bus STOPPING
+[20/Dec/2015:17:23:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:23:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:23:00] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:17:23:00] ENGINE Bus STOPPED
+[20/Dec/2015:17:23:00] ENGINE Bus EXITING
+[20/Dec/2015:17:23:00] ENGINE Bus EXITED
+[20/Dec/2015:17:23:00] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:23:02] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:23:02] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:23:02] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:23:02] ENGINE Bus STARTING
+[20/Dec/2015:17:23:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:23:02] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:23:02] ENGINE Bus STARTED
+[20/Dec/2015:17:23:06] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:17:23:14]  key must be an instance of str
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = cache.get(url)
+TypeError: key must be an instance of str
+[20/Dec/2015:17:24:24]  key must be an instance of str
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = cache.get(url)
+TypeError: key must be an instance of str
+[20/Dec/2015:17:25:20] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:25:20] ENGINE Bus STOPPING
+[20/Dec/2015:17:25:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:25:20] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:25:20] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:17:25:20] ENGINE Bus STOPPED
+[20/Dec/2015:17:25:20] ENGINE Bus EXITING
+[20/Dec/2015:17:25:20] ENGINE Bus EXITED
+[20/Dec/2015:17:25:20] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:25:22] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:25:22] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:25:22] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:25:22] ENGINE Bus STARTING
+[20/Dec/2015:17:25:22] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:25:22] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:25:22] ENGINE Bus STARTED
+[20/Dec/2015:17:25:24] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:17:25:43]  key must be an instance of str
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = cache.get(url)
+TypeError: key must be an instance of str
+[20/Dec/2015:17:26:22] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:26:22] ENGINE Bus STOPPING
+[20/Dec/2015:17:26:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:26:22] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:26:22] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:17:26:22] ENGINE Bus STOPPED
+[20/Dec/2015:17:26:22] ENGINE Bus EXITING
+[20/Dec/2015:17:26:22] ENGINE Bus EXITED
+[20/Dec/2015:17:26:22] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:26:24] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:26:24] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:26:24] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:26:24] ENGINE Bus STARTING
+[20/Dec/2015:17:26:24] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:26:24] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:26:24] ENGINE Bus STARTED
+[20/Dec/2015:17:26:27] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:17:26:35]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 29, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 18, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[20/Dec/2015:17:28:33] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:28:33] ENGINE Bus STOPPING
+[20/Dec/2015:17:28:33] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:28:33] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:28:33] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:17:28:33] ENGINE Bus STOPPED
+[20/Dec/2015:17:28:33] ENGINE Bus EXITING
+[20/Dec/2015:17:28:33] ENGINE Bus EXITED
+[20/Dec/2015:17:28:33] ENGINE Waiting for child threads to terminate...
+[20/Dec/2015:17:28:35] ENGINE Listening for SIGHUP.
+[20/Dec/2015:17:28:35] ENGINE Listening for SIGTERM.
+[20/Dec/2015:17:28:35] ENGINE Listening for SIGUSR1.
+[20/Dec/2015:17:28:35] ENGINE Bus STARTING
+[20/Dec/2015:17:28:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Dec/2015:17:28:35] ENGINE Serving on http://0.0.0.0:8080
+[20/Dec/2015:17:28:35] ENGINE Bus STARTED
+[20/Dec/2015:17:28:38] ENGINE Started monitor thread 'Session cleanup'.
+[20/Dec/2015:17:29:10]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[20/Dec/2015:17:29:32] ENGINE Keyboard Interrupt: shutting down bus
+[20/Dec/2015:17:29:32] ENGINE Bus STOPPING
+[20/Dec/2015:17:29:32] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Dec/2015:17:29:32] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Dec/2015:17:29:32] ENGINE Stopped thread 'Session cleanup'.
+[20/Dec/2015:17:29:32] ENGINE Bus STOPPED
+[20/Dec/2015:17:29:32] ENGINE Bus EXITING
+[20/Dec/2015:17:29:32] ENGINE Bus EXITED
+[20/Dec/2015:17:29:32] ENGINE Waiting for child threads to terminate...

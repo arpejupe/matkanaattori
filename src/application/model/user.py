@@ -15,10 +15,14 @@ def get_info(user_id):
         
         cur.execute("SELECT url FROM calendar_url WHERE user_id=:user_id", 
                     {'user_id': user_id})
-        calendar_info = cur.fetchall()
-        
+        result = cur.fetchall()
+
+        calendar_url=[]
+        for url in result:
+            calendar_url.append(url[0])
+
         return {"user_id": user_info[0],
                 "username": user_info[1],
                 "timezone": user_info[3],
                 "walkspeed": user_info[4],
-                "calendar_url": calendar_info}
+                "calendar_url": calendar_url}
