@@ -6,6 +6,7 @@
 function geo_error() {
     console.log("no position available");
 }
+
 var geo_options = {
     enableHighAccuracy: true,
     maximumAge: 30000, // age of cached position is accepted in milliseconds
@@ -33,23 +34,32 @@ function geo_success(position) {
     userGeolocation = position;
 
     $.ajax({
-        url: "http://localhost:8080/locate/",
+        url: "http://localhost:8080/location/",
         type: "GET",
+        contentType: "text/xml; charset=utf-8",
         data: {
             "lat": position.coords.latitude,
             "lng": position.coords.longitude
         },
-        contentType: "text/xml; charset=utf-8",
         success: function (data) {
             console.log(data);
-            timeleft = data["time_left"];
-            $("#next_event").text(data["next_event"]);
-            clearInterval(timer);
-            timer = setInterval(tic, 1000);
-            updateTime();
+            if(data["error"]) {
+                var content = $("<h2 class='error_msg'>Error: " + data["error_msg"] + "</h2>");
+                $("#timer_frame").append(content);
+            }
+            else {
+                var content = $("<div id='header_subtext'> go in <span id='time_left'></span> to next event </div>\n\
+                                 <div id='header_subtext'> at <span id='next_event'>" + data["next_event"] + "</span></div>");
+                $("#timer_frame").append(content);
+                timeleft = data["time_left"];
+                clearInterval(timer);
+                timer = setInterval(tic, 1000);
+                updateTime();
+            }
         },
-        error: function (e) {
-            console.log(e.message);
+        error: function () {
+            var content = $("<h2 class='error_msg'>Error: Couldn't calculate next event!</h2>");
+            $("#timer_frame").append(content);
         }
     });
 }

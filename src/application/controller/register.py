@@ -25,9 +25,6 @@ class RegisterController(object):
     @cherrypy.tools.mako(filename="register.html")
     @cherrypy.expose
     def submit(self, username=None, password=None, timezone=None, calendar_url=None):
-        # If calendar_url is not list, convert then
-        if isinstance(calendar_url, basestring):
-            calendar_url = [calendar_url]
         try:
             self.register.submit(username, password, timezone, calendar_url)
             return {'register': True,

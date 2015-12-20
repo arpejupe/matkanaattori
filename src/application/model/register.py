@@ -52,10 +52,17 @@ class RegisterModel(object):
     def submit(self, username, password, timezone, calendar_url):
         username = escape(username)
         password = escape(password)
+        
+        # If calendar_url is not list, convert then
+        if isinstance(calendar_url, basestring):
+            calendar_url = [calendar_url]
+        
+        # Go through list to escape
         i=0
         for url in calendar_url:
             calendar_url[i] = escape(url)
             i=+1
+            
         try:
             self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
         except ValidationException as ex:

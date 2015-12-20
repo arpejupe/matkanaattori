@@ -11,16 +11,12 @@ from application.model import calendar
 from application.model import matkaprovider
 from application.model import jyulocation
 
-from config import constant
-   
-class LocateController(object):
+class LocationException(Exception):
+    pass
 
-    @cherrypy.expose
-    @cherrypy.tools.json_out()
-    def index(self, lat=None, lng=None):
-        userinfo = cherrypy.session.get(constant.SESSION_KEY)
-        if userinfo is None:
-            return "Session is not set"
+class LocationModel(object):
+    
+    def calculate(self, lat=None, lng=None, userinfo=None):
         # annettu: käyttäjänimi ja käyttäjän geolokaatio
         # pyydä: käyttäjän kalenter(e)ista next eventin aloitusaika
         # muuta: next eventin paikka koordinaateiksi

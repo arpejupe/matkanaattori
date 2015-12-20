@@ -4,17 +4,16 @@ import cachetools
 from library.location_pb2 import *
 from requests import get
 
-URL = "http://jyulocation.appspot.com/locate/"
+from config import constant
 
 @cachetools.func.lru_cache(maxsize=32)
-def getJyuLocation(locationName):
+def getJyuLocation(location_name):
     message = Response()
-    r = get(URL + cgi.escape(locationName), stream=True)
-    u = snappy.uncompress(r.content)
-    message.ParseFromString(u)
+    response = get(constant.JYULOCATION + cgi.escape(location_name), stream=True)
+    data = snappy.uncompress(response.content)
+    message.ParseFromString(data)
 
     #print (message.status) # found: 0, not found: 1, error: 2
-
     if message.status is 0:
         return message.location[0]
     return None

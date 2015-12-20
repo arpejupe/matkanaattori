@@ -19,7 +19,12 @@ class Main(object):
 
         # Update the global settings for the HTTP server and engine
         cherrypy.config.update(os.path.join(self.conf_path, "server.cfg"))
-        #cherrypy.config.update({'error_page.default': self.on_error})
+        cherrypy.config.update({'error_page.default': self.on_error})
+        
+        # Create the logs directory
+        log_dir = os.path.join(self.base_dir, "log")
+        if not os.path.exists(log_dir):
+            os.mkdir(log_dir)
         
         # We amend the system path so that Python can find
         # the application's modules.
@@ -33,6 +38,7 @@ class Main(object):
         constant.DB = "matkanaattori.db"
         constant.SESSION_KEY = "_cp_user"
         constant.SALT = "javaninjat2015" # could be anything you like
+        constant.JYULOCATION = "http://jyulocation.appspot.com/locate/" # restful web service to convert locations
 
         # Template engine tool
         from library.template import MakoLoader
@@ -41,12 +47,12 @@ class Main(object):
         # Load controllers for our application
         from application.controller.auth import LoginController, LogoutController
         from application.controller.register import RegisterController
-        from application.controller.locate import LocateController
+        from application.controller.location import LocationController
         
         controllers = {"login": LoginController(),
                        "logout": LogoutController(),
                        "register": RegisterController(),
-                       "locate": LocateController()}
+                       "location": LocationController()}
         
         # Inject them to index controller
         from application.controller.index import IndexController
@@ -86,9 +92,9 @@ class Main(object):
         headers['Content-Security-Policy'] = "default-src='self'"
 
     def on_error(self, status, message, traceback, version):
-        code = '404' if status.startswith('404') else 'error'
-        template = cherrypy.engine.publish('lookup-template', "%s.mako" % code).pop()
-        return template.render()
+            code = '404' if status.startswith('404') else 'error'
+            template = cherrypy.engine.publish('lookup-template', "%s.mako" % code).pop()
+            return template.render()
     
 if __name__ == '__main__':
     from optparse import OptionParser
