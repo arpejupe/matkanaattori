@@ -2094,3 +2094,2598 @@ AttributeError: 'module' object has no attribute 'uncompress'
 [20/Dec/2015:17:29:32] ENGINE Bus EXITING
 [20/Dec/2015:17:29:32] ENGINE Bus EXITED
 [20/Dec/2015:17:29:32] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:11:33:58] ENGINE Listening for SIGHUP.
+[21/Dec/2015:11:33:58] ENGINE Listening for SIGTERM.
+[21/Dec/2015:11:33:58] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:11:33:58] ENGINE Bus STARTING
+[21/Dec/2015:11:33:58] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:11:33:58] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:11:33:58] ENGINE Bus STARTED
+[21/Dec/2015:11:39:32] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:11:39:42]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:12:00:24] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:12:00:24] ENGINE Bus STOPPING
+[21/Dec/2015:12:00:24] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:12:00:24] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:12:00:24] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:12:00:24] ENGINE Bus STOPPED
+[21/Dec/2015:12:00:24] ENGINE Bus EXITING
+[21/Dec/2015:12:00:24] ENGINE Bus EXITED
+[21/Dec/2015:12:00:24] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:12:00:58] ENGINE Listening for SIGHUP.
+[21/Dec/2015:12:00:58] ENGINE Listening for SIGTERM.
+[21/Dec/2015:12:00:58] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:12:00:58] ENGINE Bus STARTING
+[21/Dec/2015:12:00:58] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:12:00:58] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:12:00:58] ENGINE Bus STARTED
+[21/Dec/2015:12:01:01] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:12:01:08]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 23, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:12:04:00] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:12:04:00] ENGINE Bus STOPPING
+[21/Dec/2015:12:04:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:12:04:00] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:12:04:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:12:04:00] ENGINE Bus STOPPED
+[21/Dec/2015:12:04:00] ENGINE Bus EXITING
+[21/Dec/2015:12:04:00] ENGINE Bus EXITED
+[21/Dec/2015:12:04:00] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:12:21:13] ENGINE Listening for SIGHUP.
+[21/Dec/2015:12:21:13] ENGINE Listening for SIGTERM.
+[21/Dec/2015:12:21:13] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:12:21:13] ENGINE Bus STARTING
+[21/Dec/2015:12:21:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:12:21:13] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:12:21:13] ENGINE Bus STARTED
+[21/Dec/2015:12:21:22] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:12:21:22] ENGINE Bus STOPPING
+[21/Dec/2015:12:21:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:12:21:22] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:12:21:22] ENGINE Bus STOPPED
+[21/Dec/2015:12:21:22] ENGINE Bus EXITING
+[21/Dec/2015:12:21:22] ENGINE Bus EXITED
+[21/Dec/2015:12:21:22] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:12:25:20] ENGINE Listening for SIGHUP.
+[21/Dec/2015:12:25:20] ENGINE Listening for SIGTERM.
+[21/Dec/2015:12:25:20] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:12:25:20] ENGINE Bus STARTING
+[21/Dec/2015:12:25:20] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:12:25:21] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:12:25:21] ENGINE Bus STARTED
+[21/Dec/2015:12:25:48]  
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 104, in run
+    hook()
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+TypeError: check_auth() takes at least 1 argument (0 given)
+[21/Dec/2015:12:25:48] HTTP 
+Request Headers:
+  REFERER: http://localhost:8080/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=ceb1b1d8db59151290f3be37772708c0df4ca578
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:12:25:48] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 667, in respond
+    self.hooks.run('before_handler')
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 114, in run
+    raise exc
+TypeError: check_auth() takes at least 1 argument (0 given)
+[21/Dec/2015:12:26:56] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:12:26:56] ENGINE Bus STOPPING
+[21/Dec/2015:12:26:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:12:26:56] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:12:26:56] ENGINE Bus STOPPED
+[21/Dec/2015:12:26:56] ENGINE Bus EXITING
+[21/Dec/2015:12:26:56] ENGINE Bus EXITED
+[21/Dec/2015:12:26:56] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:12:27:46] ENGINE Listening for SIGHUP.
+[21/Dec/2015:12:27:46] ENGINE Listening for SIGTERM.
+[21/Dec/2015:12:27:46] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:12:27:46] ENGINE Bus STARTING
+[21/Dec/2015:12:27:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:12:27:47] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:12:27:47] ENGINE Bus STARTED
+[21/Dec/2015:12:27:50]  
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 104, in run
+    hook()
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+TypeError: check_auth() takes at least 1 argument (0 given)
+[21/Dec/2015:12:27:50] HTTP 
+Request Headers:
+  REFERER: http://localhost:8080/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=4cd37736e875d4f4d7934a8ec319f33200686a4f
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:12:27:50] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 667, in respond
+    self.hooks.run('before_handler')
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 114, in run
+    raise exc
+TypeError: check_auth() takes at least 1 argument (0 given)
+[21/Dec/2015:13:04:07] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:04:07] ENGINE Bus STOPPING
+[21/Dec/2015:13:04:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:04:07] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:04:07] ENGINE Bus STOPPED
+[21/Dec/2015:13:04:07] ENGINE Bus EXITING
+[21/Dec/2015:13:04:07] ENGINE Bus EXITED
+[21/Dec/2015:13:04:07] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:04:08] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:04:08] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:04:08] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:04:08] ENGINE Bus STARTING
+[21/Dec/2015:13:04:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:04:08] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:04:08] ENGINE Bus STARTED
+[21/Dec/2015:13:14:08] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:14:08] ENGINE Bus STOPPING
+[21/Dec/2015:13:14:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:14:08] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:14:08] ENGINE Bus STOPPED
+[21/Dec/2015:13:14:08] ENGINE Bus EXITING
+[21/Dec/2015:13:14:08] ENGINE Bus EXITED
+[21/Dec/2015:13:14:08] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:14:09] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:14:09] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:14:09] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:14:09] ENGINE Bus STARTING
+[21/Dec/2015:13:14:09] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:14:10] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:14:10] ENGINE Bus STARTED
+[21/Dec/2015:13:14:33] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:13:14:33]  
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 104, in run
+    hook()
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/login.py", line 30, in check_auth
+    if username:
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:14:33] HTTP 
+Request Headers:
+  COOKIE: session_id=d2c4212cc53cccc6863e6a7bb0d0ba2d03648373
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:13:14:33] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 667, in respond
+    self.hooks.run('before_handler')
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 114, in run
+    raise exc
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:15:33]  
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 104, in run
+    hook()
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/login.py", line 30, in check_auth
+    if username:
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:15:33] HTTP 
+Request Headers:
+  COOKIE: session_id=46e86a57d2213a48dcd31ee8ecd47c9039b79205
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:13:15:33] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 667, in respond
+    self.hooks.run('before_handler')
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 114, in run
+    raise exc
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:16:34]  
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 104, in run
+    hook()
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/login.py", line 30, in check_auth
+    if username:
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:16:34] HTTP 
+Request Headers:
+  COOKIE: session_id=46e86a57d2213a48dcd31ee8ecd47c9039b79205
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:13:16:34] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 667, in respond
+    self.hooks.run('before_handler')
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 114, in run
+    raise exc
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:17:35] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:17:35] ENGINE Bus STOPPING
+[21/Dec/2015:13:17:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:17:35] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:13:17:35] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:17:35] ENGINE Bus STOPPED
+[21/Dec/2015:13:17:35] ENGINE Bus EXITING
+[21/Dec/2015:13:17:35] ENGINE Bus EXITED
+[21/Dec/2015:13:17:35] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:17:36] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:17:36] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:17:36] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:17:36] ENGINE Bus STARTING
+[21/Dec/2015:13:17:36] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:17:36] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:17:36] ENGINE Bus STARTED
+[21/Dec/2015:13:17:39] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:13:17:39]  
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 104, in run
+    hook()
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/login.py", line 30, in check_auth
+    if username:
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:17:39] HTTP 
+Request Headers:
+  COOKIE: session_id=46e86a57d2213a48dcd31ee8ecd47c9039b79205
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:13:17:39] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 667, in respond
+    self.hooks.run('before_handler')
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 114, in run
+    raise exc
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:19:31] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:19:31] ENGINE Bus STOPPING
+[21/Dec/2015:13:19:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:19:31] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:13:19:31] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:19:31] ENGINE Bus STOPPED
+[21/Dec/2015:13:19:31] ENGINE Bus EXITING
+[21/Dec/2015:13:19:31] ENGINE Bus EXITED
+[21/Dec/2015:13:19:31] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:19:32] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:19:32] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:19:32] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:19:32] ENGINE Bus STARTING
+[21/Dec/2015:13:19:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:19:32] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:19:32] ENGINE Bus STARTED
+[21/Dec/2015:13:19:36] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:13:19:36]  
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 104, in run
+    hook()
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/login.py", line 30, in check_auth
+    if username:
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:19:36] HTTP 
+Request Headers:
+  COOKIE: session_id=b934be4ceb5ea0c067327b8827621abdd0decff3
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:13:19:36] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 667, in respond
+    self.hooks.run('before_handler')
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 114, in run
+    raise exc
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:23:10]  
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 104, in run
+    hook()
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 63, in __call__
+    return self.callback(**self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/login.py", line 30, in check_auth
+    if username:
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:23:10] HTTP 
+Request Headers:
+  COOKIE: session_id=da5d4013820e820ee79af475099a832ddbac8b73
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:13:23:10] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 667, in respond
+    self.hooks.run('before_handler')
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 114, in run
+    raise exc
+NameError: global name 'username' is not defined
+[21/Dec/2015:13:24:12] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:24:12] ENGINE Bus STOPPING
+[21/Dec/2015:13:24:12] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:24:12] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:13:24:12] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:24:12] ENGINE Bus STOPPED
+[21/Dec/2015:13:24:12] ENGINE Bus EXITING
+[21/Dec/2015:13:24:12] ENGINE Bus EXITED
+[21/Dec/2015:13:24:12] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:24:13] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:24:13] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:24:13] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:24:13] ENGINE Bus STARTING
+[21/Dec/2015:13:24:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:24:13] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:24:13] ENGINE Bus STARTED
+[21/Dec/2015:13:24:15] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:13:24:56] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:24:56] ENGINE Bus STOPPING
+[21/Dec/2015:13:24:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:24:56] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:13:24:56] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:24:56] ENGINE Bus STOPPED
+[21/Dec/2015:13:24:56] ENGINE Bus EXITING
+[21/Dec/2015:13:24:56] ENGINE Bus EXITED
+[21/Dec/2015:13:24:56] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:24:57] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:24:57] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:24:57] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:24:57] ENGINE Bus STARTING
+[21/Dec/2015:13:24:57] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:24:58] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:24:58] ENGINE Bus STARTED
+[21/Dec/2015:13:25:02] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:13:27:35] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:27:35] ENGINE Bus STOPPING
+[21/Dec/2015:13:27:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:27:35] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:13:27:35] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:27:35] ENGINE Bus STOPPED
+[21/Dec/2015:13:27:35] ENGINE Bus EXITING
+[21/Dec/2015:13:27:35] ENGINE Bus EXITED
+[21/Dec/2015:13:27:35] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:27:36] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:27:36] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:27:36] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:27:36] ENGINE Bus STARTING
+[21/Dec/2015:13:27:36] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:27:36] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:27:36] ENGINE Bus STARTED
+[21/Dec/2015:13:27:39] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:13:28:42] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:28:42] ENGINE Bus STOPPING
+[21/Dec/2015:13:28:42] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:28:42] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:13:28:42] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:28:42] ENGINE Bus STOPPED
+[21/Dec/2015:13:28:42] ENGINE Bus EXITING
+[21/Dec/2015:13:28:42] ENGINE Bus EXITED
+[21/Dec/2015:13:28:42] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:28:43] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:28:43] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:28:43] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:28:43] ENGINE Bus STARTING
+[21/Dec/2015:13:28:43] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:28:43] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:28:43] ENGINE Bus STARTED
+[21/Dec/2015:13:28:46] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:13:28:57]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:13:29:35]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:13:31:34] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:31:34] ENGINE Bus STOPPING
+[21/Dec/2015:13:31:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:31:34] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:13:31:34] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:31:34] ENGINE Bus STOPPED
+[21/Dec/2015:13:31:34] ENGINE Bus EXITING
+[21/Dec/2015:13:31:34] ENGINE Bus EXITED
+[21/Dec/2015:13:31:34] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:32:31] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:32:31] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:32:31] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:32:31] ENGINE Bus STARTING
+[21/Dec/2015:13:32:31] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:32:31] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:32:31] ENGINE Bus STARTED
+[21/Dec/2015:13:32:33] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:13:32:41]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:13:39:53] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:39:53] ENGINE Bus STOPPING
+[21/Dec/2015:13:39:53] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:39:53] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:13:39:53] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:39:53] ENGINE Bus STOPPED
+[21/Dec/2015:13:39:53] ENGINE Bus EXITING
+[21/Dec/2015:13:39:53] ENGINE Bus EXITED
+[21/Dec/2015:13:39:53] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:48:08] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:48:08] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:48:08] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:48:08] ENGINE Bus STARTING
+[21/Dec/2015:13:48:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:48:08] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:48:08] ENGINE Bus STARTED
+[21/Dec/2015:13:48:11] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:13:48:22] HTTP 
+Request Headers:
+  REFERER: http://localhost:8080/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=27c10ad4259eb2bde653677561729b007a475e2d
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:13:48:22] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/settings.py", line 27, in index
+    'walking_speed': userinfo['walking_speed'],
+KeyError: 'walking_speed'
+[21/Dec/2015:13:51:07] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:13:51:07] ENGINE Bus STOPPING
+[21/Dec/2015:13:51:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:13:51:07] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:13:51:07] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:13:51:07] ENGINE Bus STOPPED
+[21/Dec/2015:13:51:07] ENGINE Bus EXITING
+[21/Dec/2015:13:51:07] ENGINE Bus EXITED
+[21/Dec/2015:13:51:07] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:13:51:08] ENGINE Listening for SIGHUP.
+[21/Dec/2015:13:51:08] ENGINE Listening for SIGTERM.
+[21/Dec/2015:13:51:08] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:13:51:08] ENGINE Bus STARTING
+[21/Dec/2015:13:51:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:13:51:08] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:13:51:08] ENGINE Bus STARTED
+[21/Dec/2015:13:51:10] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:13:51:17]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:09:46] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:09:46] ENGINE Bus STOPPING
+[21/Dec/2015:14:09:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:09:46] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:09:46] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:09:46] ENGINE Bus STOPPED
+[21/Dec/2015:14:09:46] ENGINE Bus EXITING
+[21/Dec/2015:14:09:46] ENGINE Bus EXITED
+[21/Dec/2015:14:09:46] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:09:48] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:09:48] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:09:48] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:09:48] ENGINE Bus STARTING
+[21/Dec/2015:14:09:48] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:09:48] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:09:48] ENGINE Bus STARTED
+[21/Dec/2015:14:09:52] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:09:59]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:12:30] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:12:30] ENGINE Bus STOPPING
+[21/Dec/2015:14:12:30] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:12:30] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:12:30] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:12:30] ENGINE Bus STOPPED
+[21/Dec/2015:14:12:30] ENGINE Bus EXITING
+[21/Dec/2015:14:12:30] ENGINE Bus EXITED
+[21/Dec/2015:14:12:30] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:12:31] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:12:31] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:12:31] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:12:31] ENGINE Bus STARTING
+[21/Dec/2015:14:12:31] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:12:31] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:12:31] ENGINE Bus STARTED
+[21/Dec/2015:14:12:35] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:12:42]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:13:03] HTTP 
+Request Headers:
+  Content-Length: 142
+  REFERER: http://localhost:8080/settings/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=793af8a1d9659ec954f9cc1470536e25aeaab5a7
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:14:13:03] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/settings.py", line 35, in submit
+    self.settings.submit(userinfo['user_id'], timezone, walking_speed, calendar_url)
+NameError: global name 'userinfo' is not defined
+[21/Dec/2015:14:13:58] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:13:58] ENGINE Bus STOPPING
+[21/Dec/2015:14:13:58] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:13:58] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:13:58] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:13:58] ENGINE Bus STOPPED
+[21/Dec/2015:14:13:58] ENGINE Bus EXITING
+[21/Dec/2015:14:13:58] ENGINE Bus EXITED
+[21/Dec/2015:14:13:58] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:20:57] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:20:57] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:20:57] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:20:57] ENGINE Bus STARTING
+[21/Dec/2015:14:20:57] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:20:57] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:20:57] ENGINE Bus STARTED
+[21/Dec/2015:14:21:05] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:21:12]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:23:34] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:23:34] ENGINE Bus STOPPING
+[21/Dec/2015:14:23:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:23:34] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:23:34] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:23:34] ENGINE Bus STOPPED
+[21/Dec/2015:14:23:34] ENGINE Bus EXITING
+[21/Dec/2015:14:23:34] ENGINE Bus EXITED
+[21/Dec/2015:14:23:34] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:23:35] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:23:35] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:23:35] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:23:35] ENGINE Bus STARTING
+[21/Dec/2015:14:23:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:23:35] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:23:35] ENGINE Bus STARTED
+[21/Dec/2015:14:23:42] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:24:00]  Settings update failed please try again!
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/settings.py", line 38, in submit
+    self.settings.submit(userinfo['user_id'], timezone, walking_speed, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 55, in submit
+    raise SubmitException("Settings update failed please try again!")
+SubmitException: Settings update failed please try again!
+[21/Dec/2015:14:26:31] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:26:31] ENGINE Bus STOPPING
+[21/Dec/2015:14:26:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:26:31] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:26:31] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:26:31] ENGINE Bus STOPPED
+[21/Dec/2015:14:26:31] ENGINE Bus EXITING
+[21/Dec/2015:14:26:31] ENGINE Bus EXITED
+[21/Dec/2015:14:26:31] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:26:32] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:26:32] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:26:32] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:26:32] ENGINE Bus STARTING
+[21/Dec/2015:14:26:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:26:32] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:26:32] ENGINE Bus STARTED
+[21/Dec/2015:14:26:37] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:26:52] HTTP 
+Request Headers:
+  Content-Length: 229
+  REFERER: http://localhost:8080/settings/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=54b2433036d5c0e1362b60b36617c374a68ee209
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:14:26:52] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/settings.py", line 38, in submit
+    self.settings.submit(userinfo['user_id'], timezone, walking_speed, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 55, in submit
+    raise SubmitException("Settings update failed please try again!". ex.message())
+AttributeError: 'str' object has no attribute 'ex'
+[21/Dec/2015:14:27:34] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:27:34] ENGINE Bus STOPPING
+[21/Dec/2015:14:27:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:27:34] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:27:34] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:27:34] ENGINE Bus STOPPED
+[21/Dec/2015:14:27:34] ENGINE Bus EXITING
+[21/Dec/2015:14:27:34] ENGINE Bus EXITED
+[21/Dec/2015:14:27:34] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:27:36] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:27:36] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:27:36] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:27:36] ENGINE Bus STARTING
+[21/Dec/2015:14:27:36] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:27:36] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:27:36] ENGINE Bus STARTED
+[21/Dec/2015:14:27:40] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:27:51] HTTP 
+Request Headers:
+  Content-Length: 229
+  REFERER: http://localhost:8080/settings/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=1dd9df37b50b83d63cb064613d14170721528767
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:14:27:51] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/settings.py", line 38, in submit
+    self.settings.submit(userinfo['user_id'], timezone, walking_speed, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 55, in submit
+    raise SubmitException("Settings update failed please try again!" + ex.message)
+TypeError: cannot concatenate 'str' and 'OperationalError' objects
+[21/Dec/2015:14:28:06] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:28:06] ENGINE Bus STOPPING
+[21/Dec/2015:14:28:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:28:06] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:28:06] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:28:06] ENGINE Bus STOPPED
+[21/Dec/2015:14:28:06] ENGINE Bus EXITING
+[21/Dec/2015:14:28:06] ENGINE Bus EXITED
+[21/Dec/2015:14:28:06] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:28:07] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:28:07] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:28:07] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:28:07] ENGINE Bus STARTING
+[21/Dec/2015:14:28:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:28:07] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:28:07] ENGINE Bus STARTED
+[21/Dec/2015:14:28:12] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:28:33] HTTP 
+Request Headers:
+  Content-Length: 229
+  REFERER: http://localhost:8080/settings/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=3dfc179d66322f2c1d011dde3ae7fef210e8d4c3
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:14:28:33] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/settings.py", line 43, in submit
+    cherrypy.log(ex.message, traceback=True)
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/__init__.py", line 326, in __call__
+    return log.error(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cplogging.py", line 216, in error
+    self.error_log.log(severity, ' '.join((self.time(), context, msg)), exc_info=exc_info)
+TypeError: sequence item 2: expected string, OperationalError found
+[21/Dec/2015:14:29:27] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:29:27] ENGINE Bus STOPPING
+[21/Dec/2015:14:29:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:29:27] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:29:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:29:27] ENGINE Bus STOPPED
+[21/Dec/2015:14:29:27] ENGINE Bus EXITING
+[21/Dec/2015:14:29:27] ENGINE Bus EXITED
+[21/Dec/2015:14:29:27] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:29:29] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:29:29] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:29:29] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:29:29] ENGINE Bus STARTING
+[21/Dec/2015:14:29:29] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:29:29] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:29:29] ENGINE Bus STARTED
+[21/Dec/2015:14:29:34] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:29:45] HTTP 
+Request Headers:
+  Content-Length: 229
+  REFERER: http://localhost:8080/settings/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=7580573961ad9e1ee5f951d018691cc58cd732f7
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:14:29:45] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/settings.py", line 38, in submit
+    self.settings.submit(userinfo['user_id'], timezone, walking_speed, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 55, in submit
+    cherrypy.log(ex.message, traceback=True)
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/__init__.py", line 326, in __call__
+    return log.error(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cplogging.py", line 216, in error
+    self.error_log.log(severity, ' '.join((self.time(), context, msg)), exc_info=exc_info)
+TypeError: sequence item 2: expected string, OperationalError found
+[21/Dec/2015:14:30:37] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:30:37] ENGINE Bus STOPPING
+[21/Dec/2015:14:30:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:30:37] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:30:37] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:30:37] ENGINE Bus STOPPED
+[21/Dec/2015:14:30:37] ENGINE Bus EXITING
+[21/Dec/2015:14:30:37] ENGINE Bus EXITED
+[21/Dec/2015:14:30:37] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:30:38] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:30:38] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:30:38] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:30:38] ENGINE Bus STARTING
+[21/Dec/2015:14:30:38] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:30:38] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:30:38] ENGINE Bus STARTED
+[21/Dec/2015:14:30:43] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:30:57] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:30:57] ENGINE Bus STOPPING
+[21/Dec/2015:14:31:02] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:31:02] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:31:02] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:31:02] ENGINE Bus STOPPED
+[21/Dec/2015:14:31:02] ENGINE Bus EXITING
+[21/Dec/2015:14:31:02] ENGINE Bus EXITED
+[21/Dec/2015:14:31:02] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:31:48] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:31:48] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:31:48] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:31:48] ENGINE Bus STARTING
+[21/Dec/2015:14:31:48] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:31:48] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:31:48] ENGINE Bus STARTED
+[21/Dec/2015:14:32:08] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:32:19]  no such column: id
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 26, in update_user
+    {":id": id, ":timezone": timezone, "walking_speed:": walking_speed})
+OperationalError: no such column: id
+[21/Dec/2015:14:32:32]  no such column: id
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 26, in update_user
+    {":id": id, ":timezone": timezone, "walking_speed:": walking_speed})
+OperationalError: no such column: id
+[21/Dec/2015:14:33:08] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:33:08] ENGINE Bus STOPPING
+[21/Dec/2015:14:33:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:33:08] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:33:08] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:33:08] ENGINE Bus STOPPED
+[21/Dec/2015:14:33:08] ENGINE Bus EXITING
+[21/Dec/2015:14:33:08] ENGINE Bus EXITED
+[21/Dec/2015:14:33:08] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:33:09] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:33:09] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:33:09] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:33:09] ENGINE Bus STARTING
+[21/Dec/2015:14:33:09] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:33:09] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:33:09] ENGINE Bus STARTED
+[21/Dec/2015:14:33:12] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:33:18]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:33:25]  You did not supply a value for binding 1.
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 26, in update_user
+    {":user_id": id, ":timezone": timezone, "walking_speed:": walking_speed})
+ProgrammingError: You did not supply a value for binding 1.
+[21/Dec/2015:14:34:04] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:34:04] ENGINE Bus STOPPING
+[21/Dec/2015:14:34:04] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:34:04] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:34:04] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:34:04] ENGINE Bus STOPPED
+[21/Dec/2015:14:34:04] ENGINE Bus EXITING
+[21/Dec/2015:14:34:04] ENGINE Bus EXITED
+[21/Dec/2015:14:34:04] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:34:05] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:34:05] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:34:05] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:34:05] ENGINE Bus STARTING
+[21/Dec/2015:14:34:05] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:34:05] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:34:05] ENGINE Bus STARTED
+[21/Dec/2015:14:34:09] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:34:15]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:34:21] HTTP 
+Request Headers:
+  Content-Length: 229
+  REFERER: http://localhost:8080/settings/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=0e4f6683b84c95344dde64a174b213b2ec99353a
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:14:34:21] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/settings.py", line 38, in submit
+    self.settings.submit(userinfo['user_id'], timezone, walking_speed, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 51, in submit
+    self.update_user(id, timezone, walking_speed, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 24, in update_user
+    pprint(id)
+NameError: global name 'pprint' is not defined
+[21/Dec/2015:14:34:33] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:34:33] ENGINE Bus STOPPING
+[21/Dec/2015:14:34:33] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:34:33] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:34:33] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:34:33] ENGINE Bus STOPPED
+[21/Dec/2015:14:34:33] ENGINE Bus EXITING
+[21/Dec/2015:14:34:33] ENGINE Bus EXITED
+[21/Dec/2015:14:34:33] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:34:34] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:34:34] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:34:34] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:34:34] ENGINE Bus STARTING
+[21/Dec/2015:14:34:34] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:34:34] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:34:34] ENGINE Bus STARTED
+[21/Dec/2015:14:34:38] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:34:41]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:34:45]  You did not supply a value for binding 1.
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 26, in update_user
+    {":user_id": id, ":timezone": timezone, "walking_speed:": walking_speed})
+ProgrammingError: You did not supply a value for binding 1.
+[21/Dec/2015:14:35:38] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:35:38] ENGINE Bus STOPPING
+[21/Dec/2015:14:35:38] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:35:38] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:35:38] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:35:38] ENGINE Bus STOPPED
+[21/Dec/2015:14:35:38] ENGINE Bus EXITING
+[21/Dec/2015:14:35:38] ENGINE Bus EXITED
+[21/Dec/2015:14:35:38] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:35:40] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:35:40] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:35:40] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:35:40] ENGINE Bus STARTING
+[21/Dec/2015:14:35:40] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:35:40] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:35:40] ENGINE Bus STARTED
+[21/Dec/2015:14:35:53] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:35:56]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:35:59]  You did not supply a value for binding 1.
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 26, in update_user
+    {":user_id": id, ":timezone": timezone, "walking_speed:": walking_speed})
+ProgrammingError: You did not supply a value for binding 1.
+[21/Dec/2015:14:40:54] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:40:54] ENGINE Bus STOPPING
+[21/Dec/2015:14:40:54] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:40:54] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:40:54] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:40:54] ENGINE Bus STOPPED
+[21/Dec/2015:14:40:54] ENGINE Bus EXITING
+[21/Dec/2015:14:40:54] ENGINE Bus EXITED
+[21/Dec/2015:14:40:54] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:40:56] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:40:56] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:40:56] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:40:56] ENGINE Bus STARTING
+[21/Dec/2015:14:40:56] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:40:56] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:40:56] ENGINE Bus STARTED
+[21/Dec/2015:14:41:01] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:41:04]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:41:10]  You did not supply a value for binding 1.
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 26, in update_user
+    {":user_id": id, ":timezone": timezone, "walking_speed:": walking_speed})
+ProgrammingError: You did not supply a value for binding 1.
+[21/Dec/2015:14:42:01] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:42:01] ENGINE Bus STOPPING
+[21/Dec/2015:14:42:01] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:42:01] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:42:01] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:42:01] ENGINE Bus STOPPED
+[21/Dec/2015:14:42:01] ENGINE Bus EXITING
+[21/Dec/2015:14:42:01] ENGINE Bus EXITED
+[21/Dec/2015:14:42:01] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:42:02] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:42:02] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:42:02] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:42:02] ENGINE Bus STARTING
+[21/Dec/2015:14:42:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:42:02] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:42:02] ENGINE Bus STARTED
+[21/Dec/2015:14:42:06] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:42:09]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:42:12]  You did not supply a value for binding 1.
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 26, in update_user
+    {":user_id": id, ":timezone": timezone, ":walking_speed": walking_speed})
+ProgrammingError: You did not supply a value for binding 1.
+[21/Dec/2015:14:42:54] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:42:54] ENGINE Bus STOPPING
+[21/Dec/2015:14:42:54] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:42:54] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:42:54] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:42:54] ENGINE Bus STOPPED
+[21/Dec/2015:14:42:54] ENGINE Bus EXITING
+[21/Dec/2015:14:42:54] ENGINE Bus EXITED
+[21/Dec/2015:14:42:54] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:42:55] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:42:55] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:42:55] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:42:55] ENGINE Bus STARTING
+[21/Dec/2015:14:42:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:42:55] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:42:55] ENGINE Bus STARTED
+[21/Dec/2015:14:42:58] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:43:01]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:43:07]  You did not supply a value for binding 1.
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 28, in update_user
+    {":timezone": timezone, ":walking_speed": walking_speed, ":user_id": id, })
+ProgrammingError: You did not supply a value for binding 1.
+[21/Dec/2015:14:43:36] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:43:36] ENGINE Bus STOPPING
+[21/Dec/2015:14:43:36] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:43:36] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:43:36] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:43:36] ENGINE Bus STOPPED
+[21/Dec/2015:14:43:36] ENGINE Bus EXITING
+[21/Dec/2015:14:43:36] ENGINE Bus EXITED
+[21/Dec/2015:14:43:36] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:43:37] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:43:37] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:43:37] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:43:37] ENGINE Bus STARTING
+[21/Dec/2015:14:43:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:43:37] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:43:37] ENGINE Bus STARTED
+[21/Dec/2015:14:43:40] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:43:43]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:43:46]  You did not supply a value for binding 1.
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 29, in update_user
+    {":timezone": timezone, ":walking_speed": walking_speed, ":user_id": id, })
+ProgrammingError: You did not supply a value for binding 1.
+[21/Dec/2015:14:48:59] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:48:59] ENGINE Bus STOPPING
+[21/Dec/2015:14:48:59] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:48:59] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:48:59] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:48:59] ENGINE Bus STOPPED
+[21/Dec/2015:14:48:59] ENGINE Bus EXITING
+[21/Dec/2015:14:48:59] ENGINE Bus EXITED
+[21/Dec/2015:14:48:59] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:49:00] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:49:00] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:49:00] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:49:00] ENGINE Bus STARTING
+[21/Dec/2015:14:49:00] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:49:00] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:49:00] ENGINE Bus STARTED
+[21/Dec/2015:14:49:05] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:49:11]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:49:15]  near "(": syntax error
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 29, in update_user
+    [timezone, walking_speed, id])
+OperationalError: near "(": syntax error
+[21/Dec/2015:14:50:14] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:50:14] ENGINE Bus STOPPING
+[21/Dec/2015:14:50:14] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:50:14] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:50:14] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:50:14] ENGINE Bus STOPPED
+[21/Dec/2015:14:50:14] ENGINE Bus EXITING
+[21/Dec/2015:14:50:14] ENGINE Bus EXITED
+[21/Dec/2015:14:50:14] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:58:14] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:58:14] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:58:14] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:58:14] ENGINE Bus STARTING
+[21/Dec/2015:14:58:14] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:58:15] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:58:15] ENGINE Bus STARTED
+[21/Dec/2015:14:58:18] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:58:21]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:58:24]  near "*": syntax error
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 31, in update_user
+    {"user_id": id})
+OperationalError: near "*": syntax error
+[21/Dec/2015:14:59:20] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:14:59:20] ENGINE Bus STOPPING
+[21/Dec/2015:14:59:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:14:59:20] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:14:59:20] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:14:59:20] ENGINE Bus STOPPED
+[21/Dec/2015:14:59:20] ENGINE Bus EXITING
+[21/Dec/2015:14:59:20] ENGINE Bus EXITED
+[21/Dec/2015:14:59:20] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:14:59:22] ENGINE Listening for SIGHUP.
+[21/Dec/2015:14:59:22] ENGINE Listening for SIGTERM.
+[21/Dec/2015:14:59:22] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:14:59:22] ENGINE Bus STARTING
+[21/Dec/2015:14:59:22] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:14:59:22] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:14:59:22] ENGINE Bus STARTED
+[21/Dec/2015:14:59:26] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:14:59:30]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:14:59:38]  near "*": syntax error
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 31, in update_user
+    {":user_id": id})
+OperationalError: near "*": syntax error
+[21/Dec/2015:14:59:59]  near "*": syntax error
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 31, in update_user
+    {":user_id": id})
+OperationalError: near "*": syntax error
+[21/Dec/2015:15:00:03]  near "*": syntax error
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 31, in update_user
+    {":user_id": id})
+OperationalError: near "*": syntax error
+[21/Dec/2015:15:00:06]  near "*": syntax error
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 31, in update_user
+    {":user_id": id})
+OperationalError: near "*": syntax error
+[21/Dec/2015:15:00:22] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:00:22] ENGINE Bus STOPPING
+[21/Dec/2015:15:00:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:00:22] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:00:22] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:00:22] ENGINE Bus STOPPED
+[21/Dec/2015:15:00:22] ENGINE Bus EXITING
+[21/Dec/2015:15:00:22] ENGINE Bus EXITED
+[21/Dec/2015:15:00:22] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:00:23] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:00:23] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:00:23] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:00:23] ENGINE Bus STARTING
+[21/Dec/2015:15:00:23] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:00:23] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:00:23] ENGINE Bus STARTED
+[21/Dec/2015:15:00:28] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:15:00:31]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:00:40]  You did not supply a value for binding 1.
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/settings.py", line 31, in update_user
+    {":user_id": id})
+ProgrammingError: You did not supply a value for binding 1.
+[21/Dec/2015:15:01:41] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:01:41] ENGINE Bus STOPPING
+[21/Dec/2015:15:01:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:01:41] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:01:41] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:01:41] ENGINE Bus STOPPED
+[21/Dec/2015:15:01:41] ENGINE Bus EXITING
+[21/Dec/2015:15:01:41] ENGINE Bus EXITED
+[21/Dec/2015:15:01:41] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:01:58] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:01:58] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:01:58] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:01:58] ENGINE Bus STARTING
+[21/Dec/2015:15:01:58] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:01:58] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:01:58] ENGINE Bus STARTED
+[21/Dec/2015:15:02:02] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:15:02:04]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:03:00] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:03:00] ENGINE Bus STOPPING
+[21/Dec/2015:15:03:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:03:00] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:03:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:03:00] ENGINE Bus STOPPED
+[21/Dec/2015:15:03:00] ENGINE Bus EXITING
+[21/Dec/2015:15:03:00] ENGINE Bus EXITED
+[21/Dec/2015:15:03:00] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:03:02] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:03:02] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:03:02] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:03:02] ENGINE Bus STARTING
+[21/Dec/2015:15:03:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:03:02] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:03:02] ENGINE Bus STARTED
+[21/Dec/2015:15:03:31] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:15:03:34]  Invalid URL u'': No schema supplied. Perhaps you meant http://?
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 16, in getCalendarEvents
+    calendar = getCalendar(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 10, in getCalendar
+    request = get(url)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 421, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 359, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 287, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 338, in prepare_url
+    "Perhaps you meant http://{0}?".format(url))
+MissingSchema: Invalid URL u'': No schema supplied. Perhaps you meant http://?
+[21/Dec/2015:15:05:00] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:05:00] ENGINE Bus STOPPING
+[21/Dec/2015:15:05:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:05:00] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:05:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:05:00] ENGINE Bus STOPPED
+[21/Dec/2015:15:05:00] ENGINE Bus EXITING
+[21/Dec/2015:15:05:00] ENGINE Bus EXITED
+[21/Dec/2015:15:05:00] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:05:01] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:05:01] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:05:01] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:05:01] ENGINE Bus STARTING
+[21/Dec/2015:15:05:01] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:05:01] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:05:01] ENGINE Bus STARTED
+[21/Dec/2015:15:05:07] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:15:05:10]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:05:25]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:05:45]  Invalid URL u'': No schema supplied. Perhaps you meant http://?
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 16, in getCalendarEvents
+    calendar = getCalendar(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 10, in getCalendar
+    request = get(url)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 421, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 359, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 287, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 338, in prepare_url
+    "Perhaps you meant http://{0}?".format(url))
+MissingSchema: Invalid URL u'': No schema supplied. Perhaps you meant http://?
+[21/Dec/2015:15:11:40]  Invalid URL u'': No schema supplied. Perhaps you meant http://?
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 16, in getCalendarEvents
+    calendar = getCalendar(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 10, in getCalendar
+    request = get(url)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 421, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 359, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 287, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 338, in prepare_url
+    "Perhaps you meant http://{0}?".format(url))
+MissingSchema: Invalid URL u'': No schema supplied. Perhaps you meant http://?
+[21/Dec/2015:15:11:44]  Invalid URL u'': No schema supplied. Perhaps you meant http://?
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 16, in getCalendarEvents
+    calendar = getCalendar(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 10, in getCalendar
+    request = get(url)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 421, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 359, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 287, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 338, in prepare_url
+    "Perhaps you meant http://{0}?".format(url))
+MissingSchema: Invalid URL u'': No schema supplied. Perhaps you meant http://?
+[21/Dec/2015:15:13:34]  Invalid URL u'': No schema supplied. Perhaps you meant http://?
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 16, in getCalendarEvents
+    calendar = getCalendar(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 10, in getCalendar
+    request = get(url)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 421, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 359, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 287, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 338, in prepare_url
+    "Perhaps you meant http://{0}?".format(url))
+MissingSchema: Invalid URL u'': No schema supplied. Perhaps you meant http://?
+[21/Dec/2015:15:13:47]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:13:53]  Invalid URL u'': No schema supplied. Perhaps you meant http://?
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 16, in getCalendarEvents
+    calendar = getCalendar(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 10, in getCalendar
+    request = get(url)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 421, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 359, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 287, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 338, in prepare_url
+    "Perhaps you meant http://{0}?".format(url))
+MissingSchema: Invalid URL u'': No schema supplied. Perhaps you meant http://?
+[21/Dec/2015:15:14:49]  Invalid URL u'': No schema supplied. Perhaps you meant http://?
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 16, in getCalendarEvents
+    calendar = getCalendar(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 10, in getCalendar
+    request = get(url)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 421, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 359, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 287, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 338, in prepare_url
+    "Perhaps you meant http://{0}?".format(url))
+MissingSchema: Invalid URL u'': No schema supplied. Perhaps you meant http://?
+[21/Dec/2015:15:16:58] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:16:58] ENGINE Bus STOPPING
+[21/Dec/2015:15:16:58] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:16:58] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:16:58] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:16:58] ENGINE Bus STOPPED
+[21/Dec/2015:15:16:58] ENGINE Bus EXITING
+[21/Dec/2015:15:16:58] ENGINE Bus EXITED
+[21/Dec/2015:15:16:58] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:16:59] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:16:59] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:16:59] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:16:59] ENGINE Bus STARTING
+[21/Dec/2015:15:16:59] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:16:59] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:16:59] ENGINE Bus STARTED
+[21/Dec/2015:15:17:02] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:15:17:05]  Invalid URL u'': No schema supplied. Perhaps you meant http://?
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 16, in getCalendarEvents
+    calendar = getCalendar(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 10, in getCalendar
+    request = get(url)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 421, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 359, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 287, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 338, in prepare_url
+    "Perhaps you meant http://{0}?".format(url))
+MissingSchema: Invalid URL u'': No schema supplied. Perhaps you meant http://?
+[21/Dec/2015:15:20:27] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:20:27] ENGINE Bus STOPPING
+[21/Dec/2015:15:20:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:20:27] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:20:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:20:27] ENGINE Bus STOPPED
+[21/Dec/2015:15:20:27] ENGINE Bus EXITING
+[21/Dec/2015:15:20:27] ENGINE Bus EXITED
+[21/Dec/2015:15:20:27] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:20:28] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:20:28] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:20:28] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:20:28] ENGINE Bus STARTING
+[21/Dec/2015:15:20:28] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:20:29] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:20:29] ENGINE Bus STARTED
+[21/Dec/2015:15:20:31] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:15:20:36]  Invalid URL u'': No schema supplied. Perhaps you meant http://?
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 16, in getCalendarEvents
+    calendar = getCalendar(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 10, in getCalendar
+    request = get(url)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 421, in request
+    prep = self.prepare_request(req)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 359, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 287, in prepare
+    self.prepare_url(url, params)
+  File "/usr/lib/python2.7/dist-packages/requests/models.py", line 338, in prepare_url
+    "Perhaps you meant http://{0}?".format(url))
+MissingSchema: Invalid URL u'': No schema supplied. Perhaps you meant http://?
+[21/Dec/2015:15:20:44]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:20:51]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:20:55]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:21:36]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:22:58] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:22:58] ENGINE Bus STOPPING
+[21/Dec/2015:15:22:58] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:22:58] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:22:58] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:22:58] ENGINE Bus STOPPED
+[21/Dec/2015:15:22:58] ENGINE Bus EXITING
+[21/Dec/2015:15:22:58] ENGINE Bus EXITED
+[21/Dec/2015:15:22:58] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:22:59] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:22:59] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:22:59] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:22:59] ENGINE Bus STARTING
+[21/Dec/2015:15:22:59] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:22:59] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:22:59] ENGINE Bus STARTED
+[21/Dec/2015:15:23:01] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:15:23:05]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:23:14]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:23:25]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:23:35]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:26:29] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:26:29] ENGINE Bus STOPPING
+[21/Dec/2015:15:26:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:26:29] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:26:29] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:26:29] ENGINE Bus STOPPED
+[21/Dec/2015:15:26:29] ENGINE Bus EXITING
+[21/Dec/2015:15:26:29] ENGINE Bus EXITED
+[21/Dec/2015:15:26:29] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:26:30] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:26:30] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:26:30] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:26:30] ENGINE Bus STARTING
+[21/Dec/2015:15:26:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:26:30] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:26:30] ENGINE Bus STARTED
+[21/Dec/2015:15:26:33] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:15:26:37]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:26:43]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:26:51]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:26:58]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:27:01]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:27:44]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:27:54]  'module' object has no attribute 'uncompress'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+  File "/usr/local/lib/python2.7/dist-packages/cachetools/func.py", line 71, in wrapper
+    v = func(*args, **kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/jyulocation.py", line 13, in getJyuLocation
+    data = snappy.uncompress(response.content)
+AttributeError: 'module' object has no attribute 'uncompress'
+[21/Dec/2015:15:30:20] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:30:20] ENGINE Bus STOPPING
+[21/Dec/2015:15:30:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:30:20] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:30:20] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:30:20] ENGINE Bus STOPPED
+[21/Dec/2015:15:30:20] ENGINE Bus EXITING
+[21/Dec/2015:15:30:20] ENGINE Bus EXITED
+[21/Dec/2015:15:30:20] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:30:21] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:30:21] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:30:21] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:30:21] ENGINE Bus STARTING
+[21/Dec/2015:15:30:21] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:30:22] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:30:22] ENGINE Bus STARTED
+[21/Dec/2015:15:30:27] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:15:32:43] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:32:43] ENGINE Bus STOPPING
+[21/Dec/2015:15:32:43] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:32:43] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:32:43] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:32:43] ENGINE Bus STOPPED
+[21/Dec/2015:15:32:43] ENGINE Bus EXITING
+[21/Dec/2015:15:32:43] ENGINE Bus EXITED
+[21/Dec/2015:15:32:43] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:32:44] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:32:44] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:32:44] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:32:44] ENGINE Bus STARTING
+[21/Dec/2015:15:32:44] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:32:44] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:32:44] ENGINE Bus STARTED
+[21/Dec/2015:15:33:56] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:33:56] ENGINE Bus STOPPING
+[21/Dec/2015:15:33:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:33:56] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:33:56] ENGINE Bus STOPPED
+[21/Dec/2015:15:33:56] ENGINE Bus EXITING
+[21/Dec/2015:15:33:56] ENGINE Bus EXITED
+[21/Dec/2015:15:33:56] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:33:58] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:33:58] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:33:58] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:33:58] ENGINE Bus STARTING
+[21/Dec/2015:15:33:58] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:33:58] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:33:58] ENGINE Bus STARTED
+[21/Dec/2015:15:41:09] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:41:09] ENGINE Bus STOPPING
+[21/Dec/2015:15:41:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:41:09] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:41:09] ENGINE Bus STOPPED
+[21/Dec/2015:15:41:09] ENGINE Bus EXITING
+[21/Dec/2015:15:41:09] ENGINE Bus EXITED
+[21/Dec/2015:15:41:09] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:41:10] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:41:10] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:41:10] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:41:10] ENGINE Bus STARTING
+[21/Dec/2015:15:41:10] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:41:10] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:41:10] ENGINE Bus STARTED
+[21/Dec/2015:15:42:19] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:42:19] ENGINE Bus STOPPING
+[21/Dec/2015:15:42:19] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:42:19] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:42:19] ENGINE Bus STOPPED
+[21/Dec/2015:15:42:19] ENGINE Bus EXITING
+[21/Dec/2015:15:42:19] ENGINE Bus EXITED
+[21/Dec/2015:15:42:19] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:42:20] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:42:20] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:42:20] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:42:20] ENGINE Bus STARTING
+[21/Dec/2015:15:42:20] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:42:21] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:42:21] ENGINE Bus STARTED
+[21/Dec/2015:15:42:41] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:15:42:44]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:42:53]  'NoneType' object has no attribute '__getitem__'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 30, in calculate
+    event_location = jyulocation.getJyuLocation(nextEvent["location"])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+[21/Dec/2015:15:43:02]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:43:10]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:43:50]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:43:54]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:44:02]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:44:06]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:44:10]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:15:44:16] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=853bd3f8d9e68c35e4e1c6e5221e2f9e6d24de77
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:44:16] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 32, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 66, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: list index out of range
+[21/Dec/2015:15:48:46] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:48:46] ENGINE Bus STOPPING
+[21/Dec/2015:15:48:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:48:46] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:15:48:46] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:48:46] ENGINE Bus STOPPED
+[21/Dec/2015:15:48:46] ENGINE Bus EXITING
+[21/Dec/2015:15:48:46] ENGINE Bus EXITED
+[21/Dec/2015:15:48:46] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:48:47] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:48:47] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:48:47] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:48:47] ENGINE Bus STARTING
+[21/Dec/2015:15:48:47] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:48:47] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:48:47] ENGINE Bus STARTED
+[21/Dec/2015:15:48:53] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=4fb70777c0ce63c662d8baa4383ccb5bd9034607
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:48:53] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 34, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 66, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: list index out of range
+[21/Dec/2015:15:49:13] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:49:13] ENGINE Bus STOPPING
+[21/Dec/2015:15:49:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:49:13] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:49:13] ENGINE Bus STOPPED
+[21/Dec/2015:15:49:13] ENGINE Bus EXITING
+[21/Dec/2015:15:49:13] ENGINE Bus EXITED
+[21/Dec/2015:15:49:13] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:49:14] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:49:14] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:49:14] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:49:14] ENGINE Bus STARTING
+[21/Dec/2015:15:49:14] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:49:14] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:49:14] ENGINE Bus STARTED
+[21/Dec/2015:15:49:18] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=dd8d6743ab57af52ce7ea713ae28c7e29ed10942
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:49:18] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 37, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 66, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: list index out of range
+[21/Dec/2015:15:49:55] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=b6f950479cd54ca41101af3557db2133e28c2285
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:49:55] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 37, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 66, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: list index out of range
+[21/Dec/2015:15:49:58] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:49:58] ENGINE Bus STOPPING
+[21/Dec/2015:15:50:03] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:50:03] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:50:03] ENGINE Bus STOPPED
+[21/Dec/2015:15:50:03] ENGINE Bus EXITING
+[21/Dec/2015:15:50:03] ENGINE Bus EXITED
+[21/Dec/2015:15:50:03] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:50:05] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:50:05] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:50:05] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:50:05] ENGINE Bus STARTING
+[21/Dec/2015:15:50:05] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:50:05] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:50:05] ENGINE Bus STARTED
+[21/Dec/2015:15:50:08] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=00815ef74e4eb1ac950b0e16f806da5d64f5b68f
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:50:08] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 37, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 66, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: list index out of range
+[21/Dec/2015:15:50:26] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:50:26] ENGINE Bus STOPPING
+[21/Dec/2015:15:50:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:50:26] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:50:26] ENGINE Bus STOPPED
+[21/Dec/2015:15:50:26] ENGINE Bus EXITING
+[21/Dec/2015:15:50:26] ENGINE Bus EXITED
+[21/Dec/2015:15:50:26] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:50:27] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:50:27] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:50:27] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:50:27] ENGINE Bus STARTING
+[21/Dec/2015:15:50:27] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:50:27] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:50:27] ENGINE Bus STARTED
+[21/Dec/2015:15:50:30] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=e50d6efcf603b6534beb8a16c4d7c13aff1ee789
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:50:30] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 37, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 66, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: list index out of range
+[21/Dec/2015:15:54:37] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:54:37] ENGINE Bus STOPPING
+[21/Dec/2015:15:54:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:54:37] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:54:37] ENGINE Bus STOPPED
+[21/Dec/2015:15:54:37] ENGINE Bus EXITING
+[21/Dec/2015:15:54:37] ENGINE Bus EXITED
+[21/Dec/2015:15:54:37] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:54:38] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:54:38] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:54:38] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:54:38] ENGINE Bus STARTING
+[21/Dec/2015:15:54:38] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:54:38] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:54:38] ENGINE Bus STARTED
+[21/Dec/2015:15:54:42] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=2419498ca0e121ba467d53ff1c80cd7ed3d69e0b
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:54:42] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 32, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 70, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: string index out of range
+[21/Dec/2015:15:55:04] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:55:04] ENGINE Bus STOPPING
+[21/Dec/2015:15:55:04] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:55:04] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:55:04] ENGINE Bus STOPPED
+[21/Dec/2015:15:55:04] ENGINE Bus EXITING
+[21/Dec/2015:15:55:04] ENGINE Bus EXITED
+[21/Dec/2015:15:55:04] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:55:05] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:55:05] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:55:05] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:55:05] ENGINE Bus STARTING
+[21/Dec/2015:15:55:05] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:55:05] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:55:05] ENGINE Bus STARTED
+[21/Dec/2015:15:55:09] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=dd43907937942167a3757db5201c12bff4b85936
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:55:09] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 32, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 73, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: string index out of range
+[21/Dec/2015:15:55:33] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:55:33] ENGINE Bus STOPPING
+[21/Dec/2015:15:55:33] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:55:33] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:55:33] ENGINE Bus STOPPED
+[21/Dec/2015:15:55:33] ENGINE Bus EXITING
+[21/Dec/2015:15:55:33] ENGINE Bus EXITED
+[21/Dec/2015:15:55:33] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:55:34] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:55:34] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:55:34] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:55:34] ENGINE Bus STARTING
+[21/Dec/2015:15:55:34] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:55:34] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:55:34] ENGINE Bus STARTED
+[21/Dec/2015:15:55:37] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=010916df1db95b604b4e4b0dce43a0c7faea4d4a
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:55:37] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 32, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 74, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: string index out of range
+[21/Dec/2015:15:57:06] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:57:06] ENGINE Bus STOPPING
+[21/Dec/2015:15:57:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:57:06] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:57:06] ENGINE Bus STOPPED
+[21/Dec/2015:15:57:06] ENGINE Bus EXITING
+[21/Dec/2015:15:57:06] ENGINE Bus EXITED
+[21/Dec/2015:15:57:06] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:57:07] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:57:07] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:57:07] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:57:07] ENGINE Bus STARTING
+[21/Dec/2015:15:57:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:57:07] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:57:07] ENGINE Bus STARTED
+[21/Dec/2015:15:57:10] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=fc1ff567ef62028a479d0e2025fd9e14dfba8709
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:57:10] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 32, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 72, in submit
+    calendar_url[0] = ""
+IndexError: list assignment index out of range
+[21/Dec/2015:15:57:44] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:57:44] ENGINE Bus STOPPING
+[21/Dec/2015:15:57:44] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:57:44] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:57:44] ENGINE Bus STOPPED
+[21/Dec/2015:15:57:44] ENGINE Bus EXITING
+[21/Dec/2015:15:57:44] ENGINE Bus EXITED
+[21/Dec/2015:15:57:44] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:57:45] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:57:45] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:57:45] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:57:45] ENGINE Bus STARTING
+[21/Dec/2015:15:57:45] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:57:45] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:57:45] ENGINE Bus STARTED
+[21/Dec/2015:15:57:48] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=f8fbbf6c06f919207a269cb5c4666a301524159c
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:57:48] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 32, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 75, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: list index out of range
+[21/Dec/2015:15:58:43] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:58:43] ENGINE Bus STOPPING
+[21/Dec/2015:15:58:43] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:58:43] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:58:43] ENGINE Bus STOPPED
+[21/Dec/2015:15:58:43] ENGINE Bus EXITING
+[21/Dec/2015:15:58:43] ENGINE Bus EXITED
+[21/Dec/2015:15:58:43] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:58:44] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:58:44] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:58:44] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:58:44] ENGINE Bus STARTING
+[21/Dec/2015:15:58:44] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:58:44] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:58:44] ENGINE Bus STARTED
+[21/Dec/2015:15:58:49] HTTP 
+Request Headers:
+  Content-Length: 62
+  REFERER: http://localhost:8080/register/
+  HOST: localhost:8080
+  CONNECTION: keep-alive
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:43.0) Gecko/20100101 Firefox/43.0
+  COOKIE: session_id=348c4320b79a23da3167a9c1635635add8f09451
+  ACCEPT-LANGUAGE: en-US,en;q=0.5
+  Content-Type: application/x-www-form-urlencoded
+  ACCEPT-ENCODING: gzip, deflate
+[21/Dec/2015:15:58:49] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/mnt/DATA/Development/www/matkanaattori/src/library/template.py", line 14, in __call__
+    env.update(self.next_handler())
+  File "/usr/local/lib/python2.7/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/register.py", line 32, in submit
+    self.register.submit(username, password, timezone, calendar_url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/register.py", line 73, in submit
+    self.validate_user(username=username, password=password, timezone=timezone, calendar_url=calendar_url[0])
+IndexError: list index out of range
+[21/Dec/2015:15:59:12] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:59:12] ENGINE Bus STOPPING
+[21/Dec/2015:15:59:12] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:59:12] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:59:12] ENGINE Bus STOPPED
+[21/Dec/2015:15:59:12] ENGINE Bus EXITING
+[21/Dec/2015:15:59:12] ENGINE Bus EXITED
+[21/Dec/2015:15:59:12] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:59:13] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:59:13] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:59:13] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:59:13] ENGINE Bus STARTING
+[21/Dec/2015:15:59:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:59:13] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:59:13] ENGINE Bus STARTED
+[21/Dec/2015:15:59:47] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:15:59:47] ENGINE Bus STOPPING
+[21/Dec/2015:15:59:47] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:15:59:47] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:15:59:47] ENGINE Bus STOPPED
+[21/Dec/2015:15:59:47] ENGINE Bus EXITING
+[21/Dec/2015:15:59:47] ENGINE Bus EXITED
+[21/Dec/2015:15:59:47] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:15:59:48] ENGINE Listening for SIGHUP.
+[21/Dec/2015:15:59:48] ENGINE Listening for SIGTERM.
+[21/Dec/2015:15:59:48] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:15:59:48] ENGINE Bus STARTING
+[21/Dec/2015:15:59:48] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:15:59:48] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:15:59:48] ENGINE Bus STARTED
+[21/Dec/2015:16:00:22] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:16:00:22] ENGINE Bus STOPPING
+[21/Dec/2015:16:00:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:16:00:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:16:00:27] ENGINE Bus STOPPED
+[21/Dec/2015:16:00:27] ENGINE Bus EXITING
+[21/Dec/2015:16:00:27] ENGINE Bus EXITED
+[21/Dec/2015:16:00:27] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:16:00:28] ENGINE Listening for SIGHUP.
+[21/Dec/2015:16:00:28] ENGINE Listening for SIGTERM.
+[21/Dec/2015:16:00:28] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:16:00:28] ENGINE Bus STARTING
+[21/Dec/2015:16:00:28] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:16:00:28] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:16:00:28] ENGINE Bus STARTED
+[21/Dec/2015:16:02:52] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:16:02:52] ENGINE Bus STOPPING
+[21/Dec/2015:16:02:52] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:16:02:52] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:16:02:52] ENGINE Bus STOPPED
+[21/Dec/2015:16:02:52] ENGINE Bus EXITING
+[21/Dec/2015:16:02:52] ENGINE Bus EXITED
+[21/Dec/2015:16:02:52] ENGINE Waiting for child threads to terminate...

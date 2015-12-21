@@ -186,6 +186,14 @@ select {
     min-width: 180px !important;
 }
 
+#settings_frame {
+    margin: 0px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    max-width: 45%;
+    min-width: 180px !important;
+}
+
 #timer_frame {
     float: left;
     width: 40%;

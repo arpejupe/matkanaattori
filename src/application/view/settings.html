@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Javaninjat" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <title>Matkanator - ${pointer}</title>
+        <link href="../static/css/style.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="../static/js/common.js"></script>
+    </head>
+    <body>
+        <div id="matkanator">
+            <div id="header_frame">
+                <h1>Matkanator</h1>
+                % if msg:
+                    <h2>${msg}</h2>
+                % endif
+                % if error_msg:
+                    <h2 class="error_msg">${error_msg}</h2>
+                % endif 
+            </div>
+            % if settings is False:
+                <div id="settings_frame">
+                    <form id="settings_form" action="submit" method="post">
+                        <label for="input_timezone">Timezone:</label>
+                        <select name="timezone" id="input_timezone">
+                            % for timezone_list in ("UTC-3:00", "UTC-2:00", "UTC-1:00", "UTC+0:00", "UTC+1:00", "UTC+2:00", "UTC+3:00"):
+                                % if timezone == timezone_list:
+                                    <option value="${timezone_list}" selected> ${timezone_list}</option>
+                                % else:
+                                    <option value="${timezone_list}"> ${timezone_list}</option>
+                                % endif
+                            % endfor
+                        </select>
+                        <label for="walking_speed">Walking speed:</label>
+                        <select name="walking_speed" id="input_walking_speed">
+                            % for speed in ("1", "2", "3"):
+                                % if walking_speed == speed:
+                                    <option value="${speed}" selected> ${speed} km/h</option>
+                                % else:
+                                    <option value="${speed}"> ${speed} km/h</option>
+                                % endif
+                            % endfor
+                        </select>
+                        <label for="input_calendar_url">Calendar URL:</label>
+                        % if calendar_url:
+                            % for url in calendar_url:
+                                <input type="text" name="calendar_url" value="${url}"/>
+                            % endfor
+                        % else:
+                            <input type="text" name="calendar_url" value=""/>
+                        % endif
+                        <div id="additional_calendars">
+                        </div>
+                        <a href="#" id="add_calendar">[add more calendars]</a>
+                        <input class="button float_right" type="submit" value="Change"/></div>
+                    </form>
+                </div>
+            % endif
+        </div>
+    </body>
+</html>

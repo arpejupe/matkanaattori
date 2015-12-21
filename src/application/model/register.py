@@ -53,10 +53,13 @@ class RegisterModel(object):
         username = escape(username)
         password = escape(password)
         
-        # If calendar_url is not list, convert then
-        if isinstance(calendar_url, basestring):
-            calendar_url = [calendar_url]
+        # Filter empty fields from the list
+        calendar_url = filter(None, calendar_url)
         
+        # Check if totally null
+        if not calendar_url:
+            calendar_url = [""]
+
         # Go through list to escape
         i=0
         for url in calendar_url:

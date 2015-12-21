@@ -47,11 +47,13 @@ class Main(object):
         # Load controllers for our application
         from application.controller.auth import LoginController, LogoutController
         from application.controller.register import RegisterController
+        from application.controller.settings import SettingsController
         from application.controller.location import LocationController
         
         controllers = {"login": LoginController(),
                        "logout": LogoutController(),
                        "register": RegisterController(),
+                       "settings": SettingsController(),
                        "location": LocationController()}
         
         # Inject them to index controller

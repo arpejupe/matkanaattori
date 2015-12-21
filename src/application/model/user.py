@@ -24,5 +24,5 @@ def get_info(user_id):
         return {"user_id": user_info[0],
                 "username": user_info[1],
                 "timezone": user_info[3],
-                "walkspeed": user_info[4],
+                "walking_speed": user_info[4],
                 "calendar_url": calendar_url}
