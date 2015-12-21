@@ -4689,3 +4689,31 @@ IndexError: list index out of range
 [21/Dec/2015:16:02:52] ENGINE Bus EXITING
 [21/Dec/2015:16:02:52] ENGINE Bus EXITED
 [21/Dec/2015:16:02:52] ENGINE Waiting for child threads to terminate...
+[21/Dec/2015:16:13:26] ENGINE Listening for SIGHUP.
+[21/Dec/2015:16:13:26] ENGINE Listening for SIGTERM.
+[21/Dec/2015:16:13:26] ENGINE Listening for SIGUSR1.
+[21/Dec/2015:16:13:26] ENGINE Bus STARTING
+[21/Dec/2015:16:13:26] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Dec/2015:16:13:26] ENGINE Serving on http://0.0.0.0:8080
+[21/Dec/2015:16:13:26] ENGINE Bus STARTED
+[21/Dec/2015:16:13:33] ENGINE Started monitor thread 'Session cleanup'.
+[21/Dec/2015:16:26:48]  'NoneType' object has no attribute 'walk'
+Traceback (most recent call last):
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/controller/location.py", line 24, in index
+    return self.location.calculate(lat, lng, userinfo)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/location.py", line 29, in calculate
+    nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 26, in getNextEvent
+    cachedEvents = getCalendarEvents(url)
+  File "/mnt/DATA/Development/www/matkanaattori/src/application/model/calendar.py", line 17, in getCalendarEvents
+    events = calendar.walk("vevent")
+AttributeError: 'NoneType' object has no attribute 'walk'
+[21/Dec/2015:16:27:00] ENGINE Keyboard Interrupt: shutting down bus
+[21/Dec/2015:16:27:00] ENGINE Bus STOPPING
+[21/Dec/2015:16:27:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Dec/2015:16:27:00] ENGINE Stopped thread 'Session cleanup'.
+[21/Dec/2015:16:27:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Dec/2015:16:27:00] ENGINE Bus STOPPED
+[21/Dec/2015:16:27:00] ENGINE Bus EXITING
+[21/Dec/2015:16:27:00] ENGINE Bus EXITED
+[21/Dec/2015:16:27:00] ENGINE Waiting for child threads to terminate...

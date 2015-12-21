@@ -149,7 +149,7 @@ select {
 
 #matkanator {
     display: inline-block;
-    margin: 5% auto;
+    margin: 5% auto 0px auto;
     padding: 20px 40px;
     background: #3d3d3d;
     border: 1px solid #3d3d3d;
@@ -254,4 +254,17 @@ select {
     float: right;
     clear: both;
     margin: 0px 0px 20px 0px;
+}
+
+#footer {
+    display: inline-block;
+    margin: 3px auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#footer > p {
+    color: #606060;
+    text-align: center;
 }

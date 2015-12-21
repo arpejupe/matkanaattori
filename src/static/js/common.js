@@ -10,4 +10,9 @@ $(function() {
             x++;
         }
     });
+    
+    // Insert date to footer
+    var date = new Date();
+    var year = date.getFullYear()  
+    $("#date").append(year);
 });
