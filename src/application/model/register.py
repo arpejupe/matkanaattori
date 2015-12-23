@@ -22,7 +22,7 @@ class RegisterModel(object):
             with sqlite3.connect(constant.DB) as con:
                 id = str(uuid.uuid4())
                 password = hashlib.sha512(password + constant.SALT).hexdigest()
-                walking_speed = "3";
+                walking_speed = "2";
                 cur = con.cursor()
                 cur.execute("INSERT INTO user VALUES (?, ?, ?, ?, ?)",
                             [id, username, password, timezone, walking_speed])

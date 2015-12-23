@@ -27,7 +27,14 @@ class SettingsController(object):
                     'timezone': userinfo['timezone'],
                     'timezones': common_timezones,
                     'walking_speed': userinfo['walking_speed'],
-                    'calendar_url': userinfo['calendar_url']}
+                    'calendar_url': userinfo['calendar_url'],
+                    'walking_speeds': {
+                        "1": "slow (30m/min)",
+                        "2": "normal (70m/min)",
+                        "3": "fast (100m/min)",
+                        "4": "running (200m/min)",
+                        "5": "cycling (300m/min)"
+                    }}
                     
     @require()
     @cherrypy.expose
@@ -48,4 +55,11 @@ class SettingsController(object):
                     'error_msg': ex.message,
                     'timezone': timezone,
                     'walking_speed': walking_speed,
-                    'calendar_url': calendar_url}
+                    'calendar_url': calendar_url,
+                    'walking_speeds': {
+                        "1": "slow (30m/min)",
+                        "2": "normal (70m/min)",
+                        "3": "fast (100m/min)",
+                        "4": "running (200m/min)",
+                        "5": "cycling (300m/min)"
+                    }}

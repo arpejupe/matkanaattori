@@ -37,11 +37,11 @@
                         </select>
                         <label for="walking_speed">Walking speed:</label>
                         <select name="walking_speed" id="input_walking_speed">
-                            % for speed in ("1", "2", "3"):
+                            % for speed in walking_speeds:
                                 % if walking_speed == speed:
-                                    <option value="${speed}" selected> ${speed} km/h</option>
+                                    <option value="${speed}" selected>${walking_speeds[speed]}</option>
                                 % else:
-                                    <option value="${speed}"> ${speed} km/h</option>
+                                    <option value="${speed}">${walking_speeds[speed]}</option>
                                 % endif
                             % endfor
                         </select>
