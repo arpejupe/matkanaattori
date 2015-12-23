@@ -6,6 +6,7 @@ from application.model.settings import SettingsModel, SubmitException
 from application.model.login import require
 from library.format import xstr
 from config import constant
+from pytz import common_timezones
 
 class SettingsController(object):
     
@@ -24,6 +25,7 @@ class SettingsController(object):
                     'pointer': "Settings",
                     'msg': 'You can change Matkanaattori settings.',
                     'timezone': userinfo['timezone'],
+                    'timezones': common_timezones,
                     'walking_speed': userinfo['walking_speed'],
                     'calendar_url': userinfo['calendar_url']}
                     
@@ -46,4 +48,4 @@ class SettingsController(object):
                     'error_msg': ex.message,
                     'timezone': timezone,
                     'walking_speed': walking_speed,
-                    'calendar_url': calendar_url} 
+                    'calendar_url': calendar_url}

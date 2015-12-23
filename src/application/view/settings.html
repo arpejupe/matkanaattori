@@ -27,7 +27,7 @@
                     <form id="settings_form" action="submit" method="post">
                         <label for="input_timezone">Timezone:</label>
                         <select name="timezone" id="input_timezone">
-                            % for timezone_list in ("UTC-3:00", "UTC-2:00", "UTC-1:00", "UTC+0:00", "UTC+1:00", "UTC+2:00", "UTC+3:00"):
+                            % for timezone_list in timezones:
                                 % if timezone == timezone_list:
                                     <option value="${timezone_list}" selected> ${timezone_list}</option>
                                 % else:

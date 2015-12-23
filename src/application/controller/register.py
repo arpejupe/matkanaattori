@@ -5,6 +5,7 @@ import cherrypy
 from application.model.register import RegisterModel, SubmitException
 from library.format import xstr
 from config import constant
+from pytz import common_timezones
 
 class RegisterController(object):
     
@@ -20,7 +21,8 @@ class RegisterController(object):
                     'msg': 'Please register by providing the following information.',
                     'username': xstr(username),
                     'password': xstr(password),
-                    'calendar_url': xstr(calendar_url)}
+                    'calendar_url': xstr(calendar_url),
+                    'timezones': common_timezones}
                     
     @cherrypy.expose
     @cherrypy.tools.mako(filename="register.html")
@@ -39,4 +41,4 @@ class RegisterController(object):
                     'error_msg': ex.message,
                     'username': username,
                     'password': password,
-                    'calendar_url': calendar_url}  
+                    'calendar_url': calendar_url}

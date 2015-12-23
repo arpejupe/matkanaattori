@@ -31,8 +31,8 @@
                         <input type="password" name="password" value="${password}"/> 
                         <label for="input_timezone">Timezone:</label>
                         <select name="timezone" id="input_timezone">
-                            % for timezone in ("UTC-3:00", "UTC-2:00", "UTC-1:00", "UTC+0:00", "UTC+1:00", "UTC+2:00", "UTC+3:00"):
-                                <option value="${timezone}"> ${timezone}</option>
+                            % for timezone in timezones:
+                                <option value="${timezone}">${timezone}</option> selected=""
                             % endfor
                         </select>
                         <label for="input_calendar_url">Calendar URL:</label>
