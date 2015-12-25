@@ -20,12 +20,12 @@
                 % endif
                 % if error_msg:
                     <h2 class="error_msg">${error_msg}</h2>
-                % endif 
+                % endif
             </div>
             <div id="login_frame">
                 <form id="login_form" action="submit" method="post">
                     <label for="input_username">User Name:</label>
-                    <input id="username_input" type="text" name="username" value="${username}"/>
+                    <input id="username_input" type="text" name="username" value="${username}" autofocus/>
                     <label for="input_password">Password:</label>
                     <input id="password_input" type="password" name="password"/>
                     <input class="button float_right" type="submit" value="Login"/>
