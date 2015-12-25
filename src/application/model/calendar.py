@@ -7,6 +7,8 @@ import pytz
 import pylibmc
 
 cache = pylibmc.Client(["127.0.0.1"], binary=True, behaviors={"tcp_nodelay": True, "ketama": True})
+cache_expiration = 600 # time in seconds after cached events expire
+cache_size = 5 # number of events to store in cache
 
 class CalendarException(Exception):
     pass
@@ -55,8 +57,7 @@ class Calendar(object):
             cachedEvents = cache.get(url)
             if cachedEvents is None:
                 cachedEvents = getCalendarEvents(url)
-                # cache values: number of events, expire time in seconds
-                cache.set(url, cachedEvents[:10], 1800)
+                cache.set(url, cachedEvents[:cache_size], cache_expiration)
             allEvents += cachedEvents
         currentTime = datetime.now(self.timezone)
         for event in sorted(allEvents, key=lambda event: event.startTime):
