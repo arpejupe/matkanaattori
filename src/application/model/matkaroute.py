@@ -4,8 +4,10 @@ from urllib import urlencode
 from xml.etree import ElementTree
 from requests import get
 from datetime import datetime
+from pytz import timezone
 
 matka_api = "http://api.matka.fi/?"
+matka_api_timezone = timezone("Europe/Helsinki")
 api_user = "matkanaattori"
 api_pass = "ties532soa"
 
@@ -22,7 +24,7 @@ class MatkaRoute(object):
     def __init__(self, a, b, time, walkspeed, timemode="2", show="1"):
         self.start_point = a
         self.end_point = b
-        self.time = time
+        self.time = time.astimezone(matka_api_timezone)
         self.walkspeed = walkspeed
         self.timemode = timemode
         self.show = show
@@ -54,8 +56,9 @@ class MatkaRoute(object):
             elif routeData.tag == "DEPARTURE":
                 departure_date = routeData.attrib["date"]
                 departure_time = routeData.attrib["time"]
-                return datetime.strptime(departure_date + departure_time, "%Y%m%d%H%M")
+                datetimeObject = datetime.strptime(departure_date + departure_time, "%Y%m%d%H%M")
+                return matka_api_timezone.localize(datetimeObject)
 
 if __name__ == '__main__':
-    route = MatkaRoute("3597369,6784330", "3392009,6686355", datetime.now(), "2")
+    route = MatkaRoute("3597369,6784330", "3392009,6686355", datetime.now(matka_api_timezone), "2")
     print route.departure_time

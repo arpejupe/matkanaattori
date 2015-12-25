@@ -22,11 +22,11 @@ class LocationModel(object):
             jyuLocation = JyuLocation(nextEvent.location)
             start_point = getKKJ3Point(lat, lng)
             end_point = getKKJ3Point(jyuLocation.coordinates.lat, jyuLocation.coordinates.lng)
-            arrival_time = nextEvent.startTime.astimezone(pytz.timezone(userinfo['timezone']))
+            arrival_time = nextEvent.startTime
             # test start point:
             # start_point = "3597369,6784330"
             route = MatkaRoute(start_point, end_point, arrival_time, userinfo["walking_speed"])
-            timeLeft = route.departure_time - datetime.datetime.now()
+            timeLeft = route.departure_time - datetime.datetime.now(pytz.utc)
             return {'time_left': timeLeft.seconds, 'next_event': nextEvent.location}
         except Exception, e:
             raise LocationException(e.message)
