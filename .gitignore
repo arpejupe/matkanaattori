@@ -4,3 +4,7 @@
 *~
 *.db
 *.log
+venv
+staticfiles
+.env
+db.sqlite3

@@ -6,9 +6,32 @@ import icalendar
 import pytz
 import pylibmc
 
-cache = pylibmc.Client(["127.0.0.1"], binary=True, behaviors={"tcp_nodelay": True, "ketama": True})
 cache_expiration = 600 # time in seconds after cached events expire
 cache_size = 5 # number of events to store in cache
+
+servers = os.environ.get('MEMCACHIER_SERVERS', '').split(',')
+user = os.environ.get('MEMCACHIER_USERNAME', '')
+pass = os.environ.get('MEMCACHIER_PASSWORD', '')
+
+cache = pylibmc.Client(servers, binary=True,
+                    username=user, password=pass,
+                    behaviors={
+                      # Faster IO
+                      "tcp_nodelay": True,
+                      "no_block": True,
+
+                      # Timeout for set/get requests
+                      "_poll_timeout": 2000,
+
+                      # Use consistent hashing for failover
+                      "ketama": True,
+
+                      # Configure failover timings
+                      "connect_timeout": 2000,
+                      "remove_failed": 4,
+                      "retry_timeout": 2,
+                      "dead_timeout": 10,
+                    })
 
 class CalendarException(Exception):
     pass
