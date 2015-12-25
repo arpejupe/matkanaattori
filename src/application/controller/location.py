@@ -7,7 +7,7 @@ from application.model.location import LocationModel, LocationException
 from application.model.login import require
 
 from config import constant
-   
+
 class LocationController(object):
 
     def __init__(self):
@@ -26,5 +26,4 @@ class LocationController(object):
             cherrypy.log(ex.message, traceback=True)
             return {'error': True,
                     'pointer': "Location",
-                    'error_msg': "Couldn't calculate next event!"}  
-
+                    'error_msg': "Couldn't calculate next event!"}

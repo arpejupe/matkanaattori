@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from urllib import urlencode
 from xml.etree import ElementTree
 from requests import get
@@ -6,6 +8,9 @@ from datetime import datetime
 matka_api = "http://api.matka.fi/?"
 api_user = "matkanaattori"
 api_pass = "ties532soa"
+
+class MatkaException(Exception):
+    pass
 
 def getRouteDepartureTime(a, b, time, walkspeed, timemode="2", show="1"):
     params = urlencode({
@@ -24,12 +29,15 @@ def getRouteDepartureTime(a, b, time, walkspeed, timemode="2", show="1"):
         r.raw.decode_content = True
         events = ElementTree.iterparse(r.raw)
         for elem,event in events:
-            if event.tag == "DEPARTURE":
+            if event.tag == "ERROR":
+                raise MatkaException(event.text)
+            elif event.tag == "DEPARTURE":
                 departure_date = event.attrib["date"]
                 departure_time = event.attrib["time"]
                 return datetime.strptime(departure_date + departure_time, "%Y%m%d%H%M")
-    return None
+    else:
+        raise MatkaException("Route not available with params: %s" % params)
 
 if __name__ == '__main__':
-    departure_time = getRouteDepartureTime("3597369,6784330", "3392009,6686355", "1030", "2")
+    departure_time = getRouteDepartureTime("3597369,6784330", "3392009,6686355", datetime.now(), "2")
     print departure_time
