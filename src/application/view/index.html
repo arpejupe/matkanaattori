@@ -8,14 +8,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
         <title>Matkanaator - ${pointer}</title>
         <link href="static/css/style.css" rel="stylesheet">
+        <link href="static/css/jquery.countdown.css" rel="stylesheet">
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
         <script src="../static/js/common.js"></script>
+        <script src="../static/js/jquery.plugin.min.js"></script>
+        <script src="../static/js/jquery.countdown.min.js"></script>
     </head>
     <body>
         <div id="matkanator">
             <div id="header_frame">
                 <h1>Matkanator</h1>
-                <h2>Makes sure that you are in time!<h2>
+                <h2>Makes sure that you are in time!</h2>
+                % if user:
+                  <h2 id="error" class='error_msg'></h2>
+                  <div id="timer_frame">
+                    <div id='countdown'></div>
+                    <div id='header_subtext'> to next event <br/>
+                      at <span id='next_event'></span>
+                    </div>
+                    <script src="static/js/geolocation.js"></script>
+                  </div>
+                % endif
             </div>
             <div id="user_frame">
                 % if user:
@@ -31,11 +44,6 @@
                         <li><a href="/login">&raquo; Login</a></li>
                         <li><a href="/register">&raquo; Register</a></li>
                     </ul>
-                % endif
-            </div>
-            <div id="timer_frame">
-                % if user:
-                    <script src="static/js/geolocation.js"></script>
                 % endif
             </div>
         </div>

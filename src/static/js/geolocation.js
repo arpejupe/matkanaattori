@@ -13,21 +13,7 @@ var geo_options = {
     //timeout: 27000 // geo_error when position retrieval times out
 };
 
-var timeleft = 0;
-var timer;
 var userGeolocation;
-
-function tic() {
-    timeleft -= 1;
-    updateTime();
-}
-
-function updateTime() {
-    var hours = Math.floor(timeleft / 3600);
-    var minutes = Math.floor((timeleft - (hours * 3600)) / 60);
-    var seconds = timeleft - (hours * 3600) - (minutes * 60);
-    $("#time_left").text(hours + "h " + minutes + "m " + seconds + "s");
-}
 
 function geo_success(position) {
 
@@ -44,22 +30,21 @@ function geo_success(position) {
         success: function (data) {
             console.log(data);
             if(data["error"]) {
-                var content = $("<h2 class='error_msg'>Error: " + data["error_msg"] + "</h2>");
-                $("#timer_frame").append(content);
+                $("#timer_frame").hide();
+                $("#error").text("Error: " + data["error_msg"]).show();
             }
             else {
-                var content = $("<div id='header_subtext'> go in <span id='time_left'></span> to next event </div>\n\
-                                 <div id='header_subtext'> at <span id='next_event'>" + data["next_event"] + "</span></div>");
-                $("#timer_frame").append(content);
-                timeleft = data["time_left"];
-                clearInterval(timer);
-                timer = setInterval(tic, 1000);
-                updateTime();
+                $("#error").hide();
+                var time_counter = new Date();
+                time_counter.setSeconds(data["time_left"]);
+                $('#countdown').countdown({until: time_counter});
+                $("#next_event").text(data["next_event"]);
+                $("#timer_frame").fadeIn();
             }
         },
         error: function () {
-            var content = $("<h2 class='error_msg'>Error: Couldn't calculate next event!</h2>");
-            $("#timer_frame").append(content);
+            $("#timer_frame").hide();
+            $("#error").text("Error: Couldn't calculate next event!").show();
         }
     });
 }
@@ -72,7 +57,8 @@ navigator.geolocation.getCurrentPosition(function (position) {
         //console.log(position.coords);
         if (position.coords.latitude != userGeolocation.coords.latitude
             || position.coords.longitude != userGeolocation.coords.longitude) {
-            geo_success(position);
+              $('#countdown').countdown("destroy");
+              geo_success(position);
         }
     }, geo_error, geo_options);
 }, geo_error, geo_options);
