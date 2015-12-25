@@ -47,7 +47,7 @@ class MatkaRoute(object):
             request.raw.decode_content = True
             return ElementTree.iterparse(request.raw)
         else:
-            raise MatkaException("Route not available (status code %s) with params: %s" % (request.status_code, params))
+            raise MatkaException("Routing not available")
 
     def getRouteDepartureTime(self):
         for elem,routeData in self.getRoute():
