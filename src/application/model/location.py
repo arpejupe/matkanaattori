@@ -7,7 +7,7 @@ import pytz
 
 from library import coordinates
 
-from application.model import calendar
+from application.model.calendar import Calendar
 from application.model.matkaroute import MatkaRoute
 from application.model.jyulocation import JyuLocation
 
@@ -18,7 +18,8 @@ class LocationModel(object):
 
     def calculate(self, lat=None, lng=None, userinfo=None):
         try:
-            nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
+            calendar = Calendar(userinfo['calendar_url'], pytz.timezone(userinfo["timezone"]))
+            nextEvent = calendar.getNextEvent()
             jyuLocation = JyuLocation(nextEvent.location)
             start_point = getKKJ3Point(lat, lng)
             end_point = getKKJ3Point(jyuLocation.coordinates.lat, jyuLocation.coordinates.lng)
