@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from requests import get
-from datetime import datetime
+import datetime
 import icalendar
 import pytz
 import pylibmc
@@ -16,8 +16,8 @@ class CalendarException(Exception):
 class Event(object):
     def __init__(self, iCalEvent, timezone):
         self.summary = iCalEvent.get("summary").to_ical()
-        self.startTime = iCalEvent.get("dtstart").dt
-        self.location = str(iCalEvent.get("location"))
+        self.setLocation(iCalEvent.get("location"))
+        self.setTime(iCalEvent.get("dtstart").dt)
         self.setTimezone(timezone)
 
     def setTimezone(self, timezone):
@@ -25,6 +25,20 @@ class Event(object):
             self.startTime = timezone.localize(self.startTime)
         else:
             self.startTime = self.startTime.astimezone(timezone)
+
+    def setTime(self, timeObject):
+        if type(timeObject) is datetime.date:
+            self.startTime = datetime.datetime.combine(timeObject, datetime.time())
+        elif type(timeObject) is datetime.datetime:
+            self.startTime = timeObject
+        else:
+            raise CalendarException("Event date parse error")
+
+    def setLocation(self, location):
+        if location is not None:
+            self.location = location.split(",")[0]
+        else:
+            self.location = location
 
 class Calendar(object):
     def __init__(self, urls, timezone):
@@ -36,18 +50,23 @@ class Calendar(object):
         if request.status_code is 200:
             return icalendar.Calendar.from_ical(request.content)
         else:
-            raise CalendarException("iCal url returned status code: %s" % request.status_code)
+            raise CalendarException("Calendar request error (status code: %s)" % request.status_code)
 
     def getCalendarEvents(self, url):
-        calendar = getCalendar(url)
+        calendar = self.getCalendar(url)
+        if calendar is None:
+            raise CalendarException("Calendar parse error")
         events = calendar.walk("vevent")
-        return parseEvents(events)
+        return self.parseEvents(events)
 
     def parseEvents(self, iCalEvents):
-        currentTime = datetime.now(self.timezone)
-        # parse past events and include only required data
-        events = [Event(event_data, self.timezone) for event_data in iCalEvents
-            if event_data.get("dtstart").dt >= currentTime]
+        currentTime = datetime.datetime.now(self.timezone)
+        # ignore past events and events without location
+        events = []
+        for iCalEvent in iCalEvents:
+            event = Event(iCalEvent, self.timezone)
+            if event.location is not None and event.startTime >= currentTime:
+                events.append(event)
         return sorted(events, key=lambda event: event.startTime)
 
     def getNextEvent(self):
@@ -56,14 +75,14 @@ class Calendar(object):
             url = str(url)
             cachedEvents = cache.get(url)
             if cachedEvents is None:
-                cachedEvents = getCalendarEvents(url)
+                cachedEvents = self.getCalendarEvents(url)
                 cache.set(url, cachedEvents[:cache_size], cache_expiration)
             allEvents += cachedEvents
-        currentTime = datetime.now(self.timezone)
+        currentTime = datetime.datetime.now(self.timezone)
         for event in sorted(allEvents, key=lambda event: event.startTime):
             if event.startTime > currentTime:
                 return event
-        raise CalendarException("Next event not available")
+        raise CalendarException("No events available")
 
 if __name__ == '__main__':
     urls = ["https://korppi.jyu.fi/calendar/ical/9e861b35b1d2cdb82d8feb805e64fd43decf4dfc0b3d5d1fc177114e634ede2a",

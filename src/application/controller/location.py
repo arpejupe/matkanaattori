@@ -26,4 +26,4 @@ class LocationController(object):
             cherrypy.log(ex.message, traceback=True)
             return {'error': True,
                     'pointer': "Location",
-                    'error_msg': "Couldn't calculate next event!"}
+                    'error_msg': ex.message}

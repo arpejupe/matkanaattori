@@ -17,21 +17,18 @@ class LocationException(Exception):
 class LocationModel(object):
 
     def calculate(self, lat=None, lng=None, userinfo=None):
-        try:
-            calendar = Calendar(userinfo['calendar_url'], pytz.timezone(userinfo["timezone"]))
-            nextEvent = calendar.getNextEvent()
-            jyuLocation = JyuLocation(nextEvent.location)
-            start_point = getKKJ3Point(lat, lng)
-            end_point = getKKJ3Point(jyuLocation.coordinates.lat, jyuLocation.coordinates.lng)
-            arrival_time = nextEvent.startTime
-            # test start point:
-            # start_point = "3597369,6784330"
-            route = MatkaRoute(start_point, end_point, arrival_time, userinfo["walking_speed"])
-            return {
-                'time_left': getTimeLeft(route.departure_time),
-                'next_event': nextEvent.location}
-        except Exception, e:
-            raise LocationException(e.message)
+        calendar = Calendar(userinfo['calendar_url'], pytz.timezone(userinfo["timezone"]))
+        nextEvent = calendar.getNextEvent()
+        jyuLocation = JyuLocation(nextEvent.location)
+        start_point = getKKJ3Point(lat, lng)
+        end_point = getKKJ3Point(jyuLocation.coordinates.lat, jyuLocation.coordinates.lng)
+        arrival_time = nextEvent.startTime
+        # test start point:
+        # start_point = "3597369,6784330"
+        route = MatkaRoute(start_point, end_point, arrival_time, userinfo["walking_speed"])
+        return {
+            'time_left': getTimeLeft(route.departure_time),
+            'next_event': nextEvent.location}
 
 def getKKJ3Point(lat, lng):
     kkj3_location = coordinates.WGS84lalo_to_KKJxy({"La": float(lat), "Lo": float(lng)})
