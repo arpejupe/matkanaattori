@@ -26,8 +26,9 @@ class LocationModel(object):
             # test start point:
             # start_point = "3597369,6784330"
             route = MatkaRoute(start_point, end_point, arrival_time, userinfo["walking_speed"])
-            timeLeft = route.departure_time - datetime.datetime.now(pytz.utc)
-            return {'time_left': timeLeft.seconds, 'next_event': nextEvent.location}
+            return {
+                'time_left': getTimeLeft(route.departure_time),
+                'next_event': nextEvent.location}
         except Exception, e:
             raise LocationException(e.message)
 
@@ -35,3 +36,7 @@ def getKKJ3Point(lat, lng):
     kkj3_location = coordinates.WGS84lalo_to_KKJxy({"La": float(lat), "Lo": float(lng)})
     point = "%d,%d" % (int(kkj3_location["I"]), int(kkj3_location["P"]))
     return point
+
+def getTimeLeft(end_time):
+    timeLeft = end_time - datetime.datetime.now(pytz.utc)
+    return int(timeLeft.total_seconds())
