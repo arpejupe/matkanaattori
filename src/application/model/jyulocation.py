@@ -11,6 +11,11 @@ from config import constant
 class JyuLocationException(Exception):
     pass
 
+class JyuLocation(object):
+    def __init__(self, location_name):
+        self.name = location_name
+        self.coordinates = getJyuLocation(self.name)
+
 @cachetools.func.lru_cache(maxsize=32)
 def getJyuLocation(location_name):
     message = Response()
@@ -25,12 +30,12 @@ def getJyuLocation(location_name):
 
 if __name__ == '__main__':
     for x in range(0, 4):
-        location = getJyuLocation("Ag Alfa")
+        agAlfa = JyuLocation("Ag Alfa")
         print ("Location of Ag Alfa:")
-        print (location.lat)
-        print (location.lng)
-        location = getJyuLocation("Ag Gamma")
+        print (agAlfa.coordinates.lat)
+        print (agAlfa.coordinates.lng)
+        agGamma = JyuLocation("Ag Gamma")
         print ("Location of Ag Gamma:")
-        print (location.lat)
-        print (location.lng)
+        print (agGamma.coordinates.lat)
+        print (agGamma.coordinates.lng)
     print(getJyuLocation.cache_info())

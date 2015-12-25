@@ -9,7 +9,7 @@ from library import coordinates
 
 from application.model import calendar
 from application.model.matkaroute import MatkaRoute
-from application.model import jyulocation
+from application.model.jyulocation import JyuLocation
 
 class LocationException(Exception):
     pass
@@ -19,9 +19,9 @@ class LocationModel(object):
     def calculate(self, lat=None, lng=None, userinfo=None):
         try:
             nextEvent = calendar.getNextEvent(*userinfo['calendar_url'])
-            event_location = jyulocation.getJyuLocation(nextEvent.location)
+            jyuLocation = JyuLocation(nextEvent.location)
             start_point = getKKJ3Point(lat, lng)
-            end_point = getKKJ3Point(event_location.lat, event_location.lng)
+            end_point = getKKJ3Point(jyuLocation.coordinates.lat, jyuLocation.coordinates.lng)
             arrival_time = nextEvent.startTime.astimezone(pytz.timezone(userinfo['timezone']))
             # test start point:
             # start_point = "3597369,6784330"
