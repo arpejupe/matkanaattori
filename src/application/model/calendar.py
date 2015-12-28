@@ -32,7 +32,6 @@ cache = pylibmc.Client(["127.0.0.1"], binary=True,
                       "connect_timeout": 2000,
                       "remove_failed": 4,
                       "retry_timeout": 2,
-                      "dead_timeout": 10,
                     })
 
 class CalendarException(Exception):
