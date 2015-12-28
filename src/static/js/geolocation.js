@@ -20,7 +20,7 @@ function geo_success(position) {
     userGeolocation = position;
 
     $.ajax({
-        url: "http://localhost:8080/location/",
+        url: "/location/",
         type: "GET",
         contentType: "text/xml; charset=utf-8",
         data: {
