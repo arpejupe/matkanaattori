@@ -31,11 +31,15 @@
                         <input type="password" name="password" value="${password}"/>
                         <label for="input_timezone">Timezone:</label>
                         <select name="timezone" id="input_timezone">
-                            % for timezone in timezones:
-                                <option value="${timezone}">${timezone}</option> selected=""
+                            % for timezone_list in timezones:
+                                % if timezone == timezone_list:
+                                    <option value="${timezone_list}" selected> ${timezone_list}</option>
+                                % else:
+                                    <option value="${timezone_list}"> ${timezone_list}</option>
+                                % endif
                             % endfor
                         </select>
-                        <label for="input_calendar_url">Calendar URL:</label>
+                        <label for="calendar_url">Calendar URL:</label>
                         % if calendar_url:
                             % for url in calendar_url:
                                 <input type="text" name="calendar_url" value="${url}"/>

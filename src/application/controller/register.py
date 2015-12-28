@@ -22,6 +22,7 @@ class RegisterController(object):
                     'username': xstr(username),
                     'password': xstr(password),
                     'calendar_url': xstr(calendar_url),
+                    'timezone': xstr(timezone),
                     'timezones': common_timezones}
                     
     @cherrypy.expose
@@ -41,4 +42,6 @@ class RegisterController(object):
                     'error_msg': ex.message,
                     'username': username,
                     'password': password,
-                    'calendar_url': calendar_url}
+                    'calendar_url': calendar_url,
+                    'timezone': xstr(timezone),
+                    'timezones': common_timezones}
