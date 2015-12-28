@@ -9,12 +9,14 @@ import pylibmc
 cache_expiration = 600 # time in seconds after cached events expire
 cache_size = 5 # number of events to store in cache
 
-servers = os.environ.get('MEMCACHIER_SERVERS', '').split(',')
-user = os.environ.get('MEMCACHIER_USERNAME', '')
-pass = os.environ.get('MEMCACHIER_PASSWORD', '')
+## For Heroku switch cache:
+#servers = os.environ.get('MEMCACHIER_SERVERS', '').split(',')
+#user = os.environ.get('MEMCACHIER_USERNAME', '')
+#pass = os.environ.get('MEMCACHIER_PASSWORD', '')
 
-cache = pylibmc.Client(servers, binary=True,
-                    username=user, password=pass,
+#cache = pylibmc.Client(servers, binary=True,
+#                    username=user, password=pass,
+cache = pylibmc.Client(["127.0.0.1"], binary=True,
                     behaviors={
                       # Faster IO
                       "tcp_nodelay": True,
