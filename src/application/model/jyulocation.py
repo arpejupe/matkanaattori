@@ -5,7 +5,6 @@ import cgi
 import cachetools
 from library.location_pb2 import *
 from requests import get
-
 from config import constant
 
 class JyuLocationException(Exception):
@@ -18,8 +17,10 @@ class JyuLocation(object):
 
 @cachetools.func.lru_cache(maxsize=32)
 def getJyuLocation(location_name):
+    print(location_name)
     message = Response()
     response = get(constant.JYULOCATION + cgi.escape(location_name), stream=True)
+    print(response.content)
     data = snappy.uncompress(response.content)
     message.ParseFromString(data)
 

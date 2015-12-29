@@ -10,7 +10,9 @@ from config import constant
 from pprint import pprint
 
 class Main(object):
+    
     def __init__(self, options):
+        
         # First let's see where we're located
         self.base_dir = os.path.normpath(os.path.abspath(options.basedir))
         
@@ -94,11 +96,12 @@ class Main(object):
         headers['Content-Security-Policy'] = "default-src='self'"
 
     def on_error(self, status, message, traceback, version):
-            code = '404' if status.startswith('404') else 'error'
-            template = cherrypy.engine.publish('lookup-template', "%s.mako" % code).pop()
-            return template.render()
+        code = '404' if status.startswith('404') else 'error'
+        template = cherrypy.engine.publish('lookup-template', "%s.mako" % code).pop()
+        return template.render()
     
 if __name__ == '__main__':
+    
     from optparse import OptionParser
     
     def parse_commandline():
