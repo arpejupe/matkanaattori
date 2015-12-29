@@ -1,6 +1,7 @@
 var { ToggleButton } = require('sdk/ui/button/toggle');
 var panels = require("sdk/panel");
 var self = require("sdk/self");
+var matkanatorUrl = "http://ec2-54-201-173-16.us-west-2.compute.amazonaws.com/";
 
 var button = ToggleButton({
   id: "mnator-button",
@@ -14,8 +15,11 @@ var button = ToggleButton({
 });
 
 var panel = require("sdk/panel").Panel({
+  width: 340,
+  height: 500,
   // matkanaattorin url
-  contentURL: "https://en.wikipedia.org/w/index.php?title=Jetpack&useformat=mobile"
+  contentURL: matkanatorUrl,
+  contentStyle: "#matkanator {margin:0!important; border-radius:0!important} #matkanator > div {max-width:100%!important;}"
 });
 
 function handleChange(state) {
