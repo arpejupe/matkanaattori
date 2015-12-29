@@ -8,4 +8,4 @@ venv
 staticfiles
 .env
 db.sqlite3
-.pem
+*.pem
