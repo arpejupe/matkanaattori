@@ -1,7 +1,7 @@
 {
     "title": "Matkanaattori Addon",
     "name": "matkanaattori-extension",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "An add-on for Matkanaattori",
     "main": "index.js",
     "author": "javaninjat",
