@@ -53,6 +53,7 @@ hr {
 a {
     color: #D36728;
     text-decoration: none;
+    font-size: 14px;
 }
 
 a:hover {
@@ -153,8 +154,8 @@ select {
     background: #3d3d3d;
     border: 1px solid #3d3d3d;
     border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
     min-height: 200px;
     min-height: 250px;
     position: relative;
@@ -206,8 +207,8 @@ select {
     background: #f0f0f0;
     border: 1px solid #f0f0f0;
     border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
 }
 
 #user_frame ul {
@@ -259,4 +260,23 @@ select {
 #footer > p {
     color: #606060;
     text-align: center;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media (max-width: 600px) {
+    /* Style adjustments for viewports that meet the condition */
+    body {
+        background: none repeat scroll 0 0 #3d3d3d;
+        color: #F0F0F0;
+    }
+    #footer > p {
+        color: #C6C6C6;
+        text-align: left;
+        margin-left: 15%;
+    }
 }
