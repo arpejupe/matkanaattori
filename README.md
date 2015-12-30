@@ -89,10 +89,14 @@ installation instructions to install the jpm tool:
 https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation
 
 To run the extension with jpm:
-    cd matkanaattori/extension
-    jpm run
+    $ cd matkanaattori/extension
+    $ jpm run
 To package the extension:
-    jpm xpi
+    $ jpm xpi
+And run with Firefox Developer Edition with xpinstall.signatures.required disable
+in about:config. With jpm the extension can be signed for distribution
+(API keys required):
+    $ jpm sign --api-key ${AMO_API_KEY} --api-secret ${AMO_API_SECRET}
 
 ## How to setup
 Install python 2.7, python-virtualenv, memcached and other required dependencies.
