@@ -47,7 +47,7 @@ function geo_success(position) {
 
 function geo_error(error) {
     console.log('GeoLocation error(' + error.code + '): ' + error.message);
-    $("#error").text("Error: No position available." + error.message).show();
+    $("#error").text("Error: No position available. Please check that you have enabled geolocation in your browser!").show();
 }
 
 navigator.geolocation.getCurrentPosition(function (position) {
