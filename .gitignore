@@ -4,11 +4,9 @@
 *~
 *.db
 *.log
-<<<<<<< HEAD
 venv
 staticfiles
 .env
 db.sqlite3
-=======
->>>>>>> d3077fd1afe42505036f163fd4bc4cd483b87b1b
 *.pem
+*.xpi
