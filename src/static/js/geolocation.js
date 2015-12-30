@@ -3,10 +3,6 @@
     src: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation
 */
 
-function geo_error() {
-    console.log("no position available");
-}
-
 var geo_options = {
     enableHighAccuracy: true,
     maximumAge: 30000, // age of cached position is accepted in milliseconds
@@ -47,6 +43,11 @@ function geo_success(position) {
             $("#error").text("Error: Couldn't calculate next event!").show();
         }
     });
+}
+
+function geo_error(error) {
+    console.log('GeoLocation error(' + error.code + '): ' + error.message);
+    $("#error").text("Error: No position available." + error.message).show();
 }
 
 navigator.geolocation.getCurrentPosition(function (position) {
