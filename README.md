@@ -2,7 +2,7 @@ Matkanaattori
 ============
 
 ## Team
-Arttu Pekkarinen & Juha Moisio 
+Arttu Pekkarinen & Juha Moisio
 
 ## License
 
@@ -17,8 +17,8 @@ are permitted provided that the following conditions are met:
      * Redistributions in binary form must reproduce the above copyright notice,
        this list of conditions and the following disclaimer in the documentation
        and/or other materials provided with the distribution.
-     * Neither the name of Arttu Pekkarinen or Juha Moisio, nor the names of his 
-       contributors may be used to endorse or promote products derived from this 
+     * Neither the name of Arttu Pekkarinen or Juha Moisio, nor the names of his
+       contributors may be used to endorse or promote products derived from this
        software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -46,7 +46,7 @@ https://bitbucket.org/Lawouach/twiseless/src/d171fde9e454b97d519fef30af48b5c70ff
 
 Directory Layout:
 
- * main.py: The bootstrap which handles the launching, setups, loading of all modules and 
+ * main.py: The bootstrap which handles the launching, setups, loading of all modules and
    controllers, and defining constants. Please note that you setup and clean database from here
    by commenting and uncommenting!
  * application: Matkanator applications divided in models, views and controllers. For viewing
@@ -84,21 +84,32 @@ provided timezone.
 ### Browser extension
 The browser extension is created for Firefox using the Firefox Add-on SDK.
 
+Firefox Add-on SDK includes jpm command line developer tool. Follow the
+installation instructions to install the jpm tool:
+https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation
+
+To run the extension with jpm:
+    cd matkanaattori/extension
+    jpm run
+To package the extension:
+    jpm xpi
+
 ## How to setup
-Install python 2.7, python-virtualenv and other required dependencies.
-With apt:
-    $ apt-get install python python-virtualenv libmemcached-dev libsnappy-dev zlib1g-dev
+Install python 2.7, python-virtualenv, memcached and other required dependencies.
+Install required dependencies with apt:
+    $ apt-get install python python-virtualenv memcached libmemcached-dev libsnappy-dev zlib1g-dev
 Create new virtualenv and activate it:
     $ virtualenv venv
     $ source venv/bin/activate
 Install required python libraries with pip:
     $ pip install -r requirements.txt
-Start with main.py:
-    $ python main.py
+Start local memcached in background:
+    $  memcached 127.0.0.1 &
+Start main.py in background:
+    $ nohup python main.py &
 
 ## Python library dependencies
 All external python library dependencies are listed in the requirements.txt file.
 
 ## jQuery plugins
 For time countdown we use Countdown jQuery plugin written by Keith Wood.
-
