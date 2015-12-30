@@ -37,7 +37,7 @@ function geo_success(position) {
                 $("#error").hide();
                 var time_counter = new Date();
                 time_counter.setSeconds(data["time_left"]);
-                $('#countdown').countdown({until: time_counter});
+                $('#countdown').countdown({until: time_counter, compact: true, description: ''});
                 $("#next_event").text(data["next_event"]);
                 $("#timer_frame").fadeIn();
             }

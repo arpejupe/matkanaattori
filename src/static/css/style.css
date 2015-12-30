@@ -236,8 +236,7 @@ select {
 }
 
 #next_event {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 5px;
     color: #CCFFDD;
     font-size: 32px;
     white-space: nowrap;

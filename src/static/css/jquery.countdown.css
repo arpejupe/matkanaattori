@@ -1,4 +1,8 @@
 /* jQuery Countdown styles 2.0.0. */
+#countdown {
+    display: inline-block;
+    margin: 10px auto 10px auto;
+}
 .countdown-rtl {
 	direction: rtl;
 }
@@ -35,7 +39,8 @@
 .countdown-section {
 	display: block;
 	float: left;
-	font-size: 75%;
+	font-size: 100%;
+    font-weight: bold;
 	text-align: center;
 }
 .countdown-amount {
@@ -43,7 +48,7 @@
 }
 .countdown-period {
     display: block;
-    text-align: center;
+    text-align: left;
 }
 .countdown-descr {
 	display: block;
