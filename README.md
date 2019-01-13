@@ -1,6 +1,31 @@
 Matkanaattori
 ============
 
+App which helps people to be in time. Matkanaattori displays how much time the
+user has left before he has to leave to make it to the next event. By combining
+info from user provided calendar, matka.fi API, jyulocation (a tool for
+converting University classrooms to locations) and browsers GeoLocation
+javascript API application is able to calculate the ETA when user needs to leave.
+
+How it works:
+- User provides his timezone information and a URL for his calendar information
+(i.e google calendar).
+- The user can specify what his walking/cycling speed is.
+    slow:30m/min)
+    normal (70m/min)
+    fast (100m/min)
+    running (200m/min)
+    cycling (300m/min)
+- User navigates to calculate view showing how much time he has left before he
+should leave to make it to the next event in his calendar. The page also shows
+information about the first stage of the journey. This beginning of the journey
+is based on the location of the user as provided by the browser and the current
+time. The end of the journey is based on the location information attached to
+the next event and its start time.
+- In addition user can install the application as browser plugin which will
+notify when user needs to leave
+
+
 ## Team
 Arttu Pekkarinen & Juha Moisio
 
