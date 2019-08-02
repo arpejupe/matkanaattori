@@ -29,34 +29,6 @@ notify when user needs to leave
 ## Team
 Arttu Pekkarinen & Juha Moisio
 
-## License
-
-Copyright (c) 2015
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without modification,
-are permitted provided that the following conditions are met:
-
-     * Redistributions of source code must retain the above copyright notice,
-       this list of conditions and the following disclaimer.
-     * Redistributions in binary form must reproduce the above copyright notice,
-       this list of conditions and the following disclaimer in the documentation
-       and/or other materials provided with the distribution.
-     * Neither the name of Arttu Pekkarinen or Juha Moisio, nor the names of his
-       contributors may be used to endorse or promote products derived from this
-       software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 ## Documentation of choices
 
 ### Environment and tooling
@@ -114,31 +86,51 @@ installation instructions to install the jpm tool:
 https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation
 
 To run the extension with jpm:
-    $ cd matkanaattori/extension
-    $ jpm run
+    ```
+    cd matkanaattori/extension
+    jpm run
+    ```
 To package the extension:
-    $ jpm xpi
+    ```
+    jpm xpi
+    ```
 And run with Firefox Developer Edition with xpinstall.signatures.required disable
 in about:config. With jpm the extension can be signed for distribution
 (API keys required):
-    $ jpm sign --api-key ${AMO_API_KEY} --api-secret ${AMO_API_SECRET}
+```
+jpm sign --api-key ${AMO_API_KEY} --api-secret ${AMO_API_SECRET}
+```
 
 ## How to setup
-Install python 2.7, python-virtualenv, memcached and other required dependencies.
-Install required dependencies with apt:
-    $ apt-get install python python-virtualenv memcached libmemcached-dev libsnappy-dev zlib1g-dev
-Create new virtualenv and activate it:
-    $ virtualenv venv
-    $ source venv/bin/activate
-Install required python libraries with pip:
-    $ pip install -r requirements.txt
-Start local memcached in background:
-    $  memcached 127.0.0.1 &
-Start main.py in background:
-    $ nohup python main.py &
+
+1) Install python 2.7, python-virtualenv, memcached and other required dependencies.
+2) Install required dependencies with apt:
+    ```
+    apt-get install python python-virtualenv memcached libmemcached-dev libsnappy-dev zlib1g-dev
+    ```
+3) Create new virtualenv and activate it:
+    ```
+    virtualenv venv
+    source venv/bin/activate
+    ```
+4) Install required python libraries with pip:
+    ```
+    pip install -r requirements.txt
+    ```
+5) Start local memcached in background:
+    ```
+    memcached 127.0.0.1
+    ```
+6) Start main.py in background:
+   ```
+   nohup python main.py
+   ```
 
 ## Python library dependencies
 All external python library dependencies are listed in the requirements.txt file.
 
 ## jQuery plugins
 For time countdown we use Countdown jQuery plugin written by Keith Wood.
+
+## License
+Copyright (c) 2015. All rights reserved.
